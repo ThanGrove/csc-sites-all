@@ -1,3 +1,6 @@
 # vim stuff
 *.swp
 *.un~
+
+# mac garbage
+.DS_Store

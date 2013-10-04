@@ -1,6 +1,9 @@
+settings.php
+
 # vim stuff
 *.swp
 *.un~
 
 # mac garbage
-.DS_Store
+*.DS_Store
+

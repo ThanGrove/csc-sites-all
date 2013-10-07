@@ -1,31 +1,31 @@
 /* Global variables, mixins, etc. */
-/* line 94, ../../../../../sass/_global.scss */
+/* line 95, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .pane-csc-directors > h2, #content .pane-events-panel-pane-1 .views-label {
   font-family: brandon;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 100, ../../../../../sass/_global.scss */
+/* line 101, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title {
   font-size: 2em;
   margin-top: 0px;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 1311px) and (max-width: 2000px) {
-  /* line 100, ../../../../../sass/_global.scss */
+  /* line 101, ../../../../../sass/_global.scss */
   #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title {
     font-size: 3em;
   }
 }
 @media only screen and (min-width: 2001px) {
-  /* line 100, ../../../../../sass/_global.scss */
+  /* line 101, ../../../../../sass/_global.scss */
   #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title {
     font-size: 3em;
   }
 }
 
-/* line 110, ../../../../../sass/_global.scss */
+/* line 111, ../../../../../sass/_global.scss */
 .pane-csc-related-research h2 a, .pane-csc-related-events h2 a, .pane-csc-related-activities h2 a, .pane-csc-related-classes h2 a, .pane-csc-important-dates h3, .pane-csc-latest-news h3 a, #content .pane-events-panel-pane-1 .node h2 a, #content .pane-events-panel-pane-1 .node span a, #content .pane-events-panel-pane-1 .views-field-title h2 a, #content .pane-events-panel-pane-1 .views-field-title span a, #content .pane-research-panel-pane-1 .node h2 a, #content .pane-research-panel-pane-1 .node span a, #content .pane-research-panel-pane-1 .views-field-title h2 a, #content .pane-research-panel-pane-1 .views-field-title span a, #content .pane-learning-panel-pane-1 .node h2 a, #content .pane-learning-panel-pane-1 .node span a, #content .pane-learning-panel-pane-1 .views-field-title h2 a, #content .pane-learning-panel-pane-1 .views-field-title span a, #content .pane-engagement-panel-pane-1 .node h2 a, #content .pane-engagement-panel-pane-1 .node span a, #content .pane-engagement-panel-pane-1 .views-field-title h2 a, #content .pane-engagement-panel-pane-1 .views-field-title span a, #content .pane-classes-panel-pane-1 .node h2 a, #content .pane-classes-panel-pane-1 .node span a, #content .pane-classes-panel-pane-1 .views-field-title h2 a, #content .pane-classes-panel-pane-1 .views-field-title span a, #content .pane-people-panel-pane-1 .node h2 a, #content .pane-people-panel-pane-1 .node span a, #content .pane-people-panel-pane-1 .views-field-title h2 a, #content .pane-people-panel-pane-1 .views-field-title span a, #content .pane-organizations-panel-pane-1 .node h2 a, #content .pane-organizations-panel-pane-1 .node span a, #content .pane-organizations-panel-pane-1 .views-field-title h2 a, #content .pane-organizations-panel-pane-1 .views-field-title span a, .csc-connect-with-us em {
   font-size: 18px;
   color: #3b3b3b;
@@ -33,12 +33,12 @@
   font-weight: normal;
   font-family: brandon;
 }
-/* line 116, ../../../../../sass/_global.scss */
+/* line 117, ../../../../../sass/_global.scss */
 .pane-csc-related-research h2 a:hover, .pane-csc-related-events h2 a:hover, .pane-csc-related-activities h2 a:hover, .pane-csc-related-classes h2 a:hover, .pane-csc-important-dates h3:hover, .pane-csc-latest-news h3 a:hover, #content .pane-events-panel-pane-1 .node h2 a:hover, #content .pane-events-panel-pane-1 .node span a:hover, #content .pane-events-panel-pane-1 .views-field-title h2 a:hover, #content .pane-events-panel-pane-1 .views-field-title span a:hover, #content .pane-research-panel-pane-1 .node h2 a:hover, #content .pane-research-panel-pane-1 .node span a:hover, #content .pane-research-panel-pane-1 .views-field-title h2 a:hover, #content .pane-research-panel-pane-1 .views-field-title span a:hover, #content .pane-learning-panel-pane-1 .node h2 a:hover, #content .pane-learning-panel-pane-1 .node span a:hover, #content .pane-learning-panel-pane-1 .views-field-title h2 a:hover, #content .pane-learning-panel-pane-1 .views-field-title span a:hover, #content .pane-engagement-panel-pane-1 .node h2 a:hover, #content .pane-engagement-panel-pane-1 .node span a:hover, #content .pane-engagement-panel-pane-1 .views-field-title h2 a:hover, #content .pane-engagement-panel-pane-1 .views-field-title span a:hover, #content .pane-classes-panel-pane-1 .node h2 a:hover, #content .pane-classes-panel-pane-1 .node span a:hover, #content .pane-classes-panel-pane-1 .views-field-title h2 a:hover, #content .pane-classes-panel-pane-1 .views-field-title span a:hover, #content .pane-people-panel-pane-1 .node h2 a:hover, #content .pane-people-panel-pane-1 .node span a:hover, #content .pane-people-panel-pane-1 .views-field-title h2 a:hover, #content .pane-people-panel-pane-1 .views-field-title span a:hover, #content .pane-organizations-panel-pane-1 .node h2 a:hover, #content .pane-organizations-panel-pane-1 .node span a:hover, #content .pane-organizations-panel-pane-1 .views-field-title h2 a:hover, #content .pane-organizations-panel-pane-1 .views-field-title span a:hover, .csc-connect-with-us em:hover {
   color: #888888;
 }
 
-/* line 121, ../../../../../sass/_global.scss */
+/* line 122, ../../../../../sass/_global.scss */
 .see-all a, .see-all-research a, .pane-csc-related-activities .see-all a, .pane-csc-related-classes .see-all a {
   position: relative;
   font-size: 11px;
@@ -48,7 +48,7 @@
   background: url(../images/rounded_black_arrow.png) right no-repeat;
   padding-right: 22px;
 }
-/* line 130, ../../../../../sass/_global.scss */
+/* line 131, ../../../../../sass/_global.scss */
 .see-all a:hover, .see-all-research a:hover {
   color: #898989;
   left: 2px;
@@ -2630,26 +2630,31 @@ a#menu-toggle:after {
 }
 /* line 1903, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, .csc-3col-second .csc-3col-inside .panel-pane:first-child {
-  background: none;
+  border-top: 1px solid #e0e0e0;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-26 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-26 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
+  border: none;
   background-color: #605385;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-22 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-22 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
+  border: none;
   background-color: #00b1a6;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-20 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-20 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
+  border: none;
   background-color: #ff6b53;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-25 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-25 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
+  border: none;
   background-color: #34c780;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-21 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-21 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
+  border: none;
   background-color: #ffc123;
 }
 
@@ -3129,7 +3134,7 @@ body.logged-in #content {
   color: white;
   background: url(../images/rounded_white_arrow.png) right no-repeat;
 }
-/* line 141, ../../../../../sass/_global.scss */
+/* line 142, ../../../../../sass/_global.scss */
 .see-all a:hover {
   color: #cccccc;
 }
@@ -3392,22 +3397,27 @@ body.logged-in #content {
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-26 .csc-people-detail:hover {
+  border: none;
   background-color: #605385;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-22 .csc-people-detail:hover {
+  border: none;
   background-color: #00b1a6;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-20 .csc-people-detail:hover {
+  border: none;
   background-color: #ff6b53;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-25 .csc-people-detail:hover {
+  border: none;
   background-color: #34c780;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-21 .csc-people-detail:hover {
+  border: none;
   background-color: #ffc123;
 }
 
@@ -4045,7 +4055,7 @@ body .csc-panel-separator {
   position: relative;
   z-index: 50;
 }
-/* line 49, ../../../../../sass/_global.scss */
+/* line 50, ../../../../../sass/_global.scss */
 body.media-small body .csc-panel-separator {
   background: url(../images/icon-menu.svg) no-repeat;
   font-size: 40px;

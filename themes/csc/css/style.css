@@ -2626,7 +2626,7 @@ a#menu-toggle:after {
 }
 /* line 1897, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-3col-second .panels-ipe-portlet-wrapper:first-child {
-  display: table-cell;
+  display: table;
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-26 .csc-3col-second .panels-ipe-portlet-wrapper:first-child {

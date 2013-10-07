@@ -40,7 +40,7 @@ function csc_related_people_render($subtype, $conf, $panel_args, $context = NULL
                                                         'body' => $node->field_small_teaser[$lng][0]['value'],
                                                         'nid' => $node->nid,
                                                         'position' => $node->field_position[$lng][0]['value'],
-                                                        'image' => isset($node->field_featured_image[$lng][1]['uri']) ? $node->field_featured_image[$lng][1]['uri'] : '',
+                                                        'image' => isset($node->field_featured_image[$lng][1]['uri']) ? $node->field_featured_image[$lng][1]['uri'] : ''
                                                   ));
     }
 

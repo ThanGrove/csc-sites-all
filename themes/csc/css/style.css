@@ -2629,23 +2629,23 @@ a#menu-toggle:after {
   display: table;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-26 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane, body.page-node-26 .csc-3col-second .csc-3col-inside .panel-pane {
+body.page-node-26 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-26 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
   background-color: #605385;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-22 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane, body.page-node-22 .csc-3col-second .csc-3col-inside .panel-pane {
+body.page-node-22 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-22 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
   background-color: #00b1a6;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-20 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane, body.page-node-20 .csc-3col-second .csc-3col-inside .panel-pane {
+body.page-node-20 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-20 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
   background-color: #ff6b53;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-25 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane, body.page-node-25 .csc-3col-second .csc-3col-inside .panel-pane {
+body.page-node-25 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-25 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
   background-color: #34c780;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-21 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane, body.page-node-21 .csc-3col-second .csc-3col-inside .panel-pane {
+body.page-node-21 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-21 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
   background-color: #ffc123;
 }
 

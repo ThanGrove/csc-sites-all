@@ -152,7 +152,7 @@
     };
    
     //*** Tiles Positioning ***//
-    var needSeparator = divideAfter > 0 && divideAfter < $('.isotope-item').length && !$('.isotope').find('.hide-me').length;
+    var needSeparator = 0; //divideAfter > 0 && divideAfter < $('.isotope-item').length && !$('.isotope').find('.hide-me').length;
 
     i = 0, posX = 0;
     $('.isotope-item').each(function( index, el ) {

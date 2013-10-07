@@ -46,9 +46,9 @@ function csc_teaser_render($subtype, $conf, $panel_args, $context = NULL) {
   $output .= isset($data->field_teaser_value) ? $data->field_teaser_value : '';
 
   if(isset($data->body_value) && $data->body_value <> ''){
-    $output.= '<div class="csc-teaser-more">READ MORE</div>';
+    $output.= '<div class="csc-teaser-more">read full description</div>';
     $output.= '</div>'; // closes csc-teaser-div above
-    $output.= '<div id="csc-teaser-body" class="tooltip"><div class="tooltip-content">'. render($content) .'</div><div class="csc-teaser-less">read less</div></div>';
+    $output.= '<div id="csc-teaser-body" class="tooltip"><div class="tooltip-content">'. render($content) .'</div><div class="csc-teaser-less">read summary</div></div>';
   } else {
     $output.= '</div>'; // closes csc-teaser-div above
   }

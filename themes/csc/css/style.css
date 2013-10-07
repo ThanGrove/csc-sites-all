@@ -2625,27 +2625,27 @@ a#menu-toggle:after {
   margin-top: 12px;
 }
 /* line 1897, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-.csc-3col-second .panel-pane:first-child {
+.csc-3col-second .panels-ipe-portlet-placeholder:first-child {
   display: table;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-26 .csc-3col-second .panel-pane:first-child {
+body.page-node-26 .csc-3col-second .panels-ipe-portlet-placeholder:first-child {
   background-color: #605385;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-22 .csc-3col-second .panel-pane:first-child {
+body.page-node-22 .csc-3col-second .panels-ipe-portlet-placeholder:first-child {
   background-color: #00b1a6;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-20 .csc-3col-second .panel-pane:first-child {
+body.page-node-20 .csc-3col-second .panels-ipe-portlet-placeholder:first-child {
   background-color: #ff6b53;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-25 .csc-3col-second .panel-pane:first-child {
+body.page-node-25 .csc-3col-second .panels-ipe-portlet-placeholder:first-child {
   background-color: #34c780;
 }
 /* line 42, ../../../../../sass/_global.scss */
-body.page-node-21 .csc-3col-second .panel-pane:first-child {
+body.page-node-21 .csc-3col-second .panels-ipe-portlet-placeholder:first-child {
   background-color: #ffc123;
 }
 

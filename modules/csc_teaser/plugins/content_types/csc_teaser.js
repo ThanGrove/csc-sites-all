@@ -7,8 +7,8 @@
         bodyShowing = 0;
 
     $readMore.on('click', function(){
-      $body.show();
       $teaser.hide();
+      $body.show();
     });
 
     $readLess.on('click', function(){

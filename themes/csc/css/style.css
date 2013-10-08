@@ -4479,13 +4479,17 @@ body.logged-in #content {
 .pane-facet h2 {
   color: gray;
 }
-/* line 3127, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3126, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.pane-facet .item-list {
+  color: white;
+}
+/* line 3128, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-facet .item-list a {
   color: white;
 }
 
 /* about us */
-/* line 3137, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3138, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .page-node-15 .pane-node-body h2 {
   font-size: 1.4em;
 }

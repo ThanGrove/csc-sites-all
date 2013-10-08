@@ -4393,3 +4393,28 @@ body.logged-in #content {
   color: #444;
   font-weight: bold;
 }
+
+/* line 3062, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-event #page-title {
+  text-transform: none;
+}
+
+/* line 3062, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-research #page-title {
+  text-transform: none;
+}
+
+/* line 3062, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-learning #page-title {
+  text-transform: none;
+}
+
+/* line 3062, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-engagement #page-title {
+  text-transform: none;
+}
+
+/* line 3062, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-class #page-title {
+  text-transform: none;
+}

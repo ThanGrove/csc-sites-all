@@ -4451,6 +4451,16 @@ body.logged-in #content {
 }
 
 /* line 3114, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-news #page-title {
+  text-transform: none;
+}
+
+/* line 3114, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-feature #page-title {
+  text-transform: none;
+}
+
+/* line 3114, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-event #page-title {
   text-transform: none;
 }

@@ -4419,3 +4419,18 @@ body.logged-in #content {
 .node-type-class #page-title {
   text-transform: none;
 }
+
+/* search */
+/* line 3071, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.pane-facet {
+  background-color: #3bcbcb;
+  padding: 6px 23px;
+}
+/* line 3075, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.pane-facet h2 {
+  color: gray;
+}
+/* line 3079, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.pane-facet .item-list a {
+  color: white;
+}

@@ -2630,7 +2630,7 @@ a#menu-toggle:after {
 }
 /* line 1903, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, .csc-3col-second .csc-3col-inside .panel-pane:first-child {
-  border-top: 1px solid #e0e0e0;
+  /*border-top: 1px solid #e0e0e0;*/
 }
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-26 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-26 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
@@ -3531,11 +3531,12 @@ body.page-node-21 .csc-people-detail:hover {
 /* line 2545, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-important-dates,
 .pane-csc-grants-buttons {
+  height: 394px;
   float: left;
   width: 50%;
 }
 
-/* line 2551, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 2552, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-important-dates .content,
 .pane-csc-grants-buttons .content {
   padding: 12px 20px 10px 24px;
@@ -3543,7 +3544,7 @@ body.page-node-21 .csc-people-detail:hover {
   font-size: 1.12em;
 }
 
-/* line 2557, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 2558, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-csc-important-dates h2 {
   text-shadow: #3c787e 0px 2px;
   font-family: brandon;
@@ -3553,9 +3554,8 @@ body.page-node-21 .csc-people-detail:hover {
   padding: 10px 0px 10px 18px;
 }
 
-/* line 2566, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 2567, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-important-dates {
-  height: 394px;
   background: #49929a;
   color: #ffffff;
 }

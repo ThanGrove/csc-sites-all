@@ -2655,7 +2655,7 @@ body.page-node-25 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .pane
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-21 .csc-3col-second .panels-ipe-portlet-wrapper:first-child .panel-pane:first-child, body.page-node-21 .csc-3col-second .csc-3col-inside .panel-pane:first-child {
   border: none;
-  background-color: #ffc123;
+  background-color: #ffba09;
 }
 @media only screen and (max-width: 640px) {
   /* line 1903, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -2735,7 +2735,7 @@ body.front .csc-3col-col-fixed, body.front .csc-panel-col-left {
   /* line 1941, ../../../../../sass/sites/all/themes/csc/css/style.scss */
   .csc-3col-first {
     width: auto;
-    display: block;
+    display: table;
     padding: 20px;
   }
   /* line 1964, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -3179,7 +3179,7 @@ body.logged-in #content {
 
 /* line 2283, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-item-teaser {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 /* line 2287, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -3425,7 +3425,7 @@ body.page-node-25 .csc-people-detail:hover {
 /* line 42, ../../../../../sass/_global.scss */
 body.page-node-21 .csc-people-detail:hover {
   border: none;
-  background-color: #ffc123;
+  background-color: #ffba09;
 }
 
 /* line 2475, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -4498,4 +4498,10 @@ body.logged-in #content {
 /* line 3141, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .page-node-15 .pane-node-body h2 {
   font-size: 1.4em;
+}
+
+/* related lists */
+/* line 3150, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.title-context {
+  text-transform: none;
 }

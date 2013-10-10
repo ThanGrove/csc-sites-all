@@ -4113,425 +4113,420 @@ body.logged-in #content {
 }
 
 /* event items */
-/* line 2991, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-.pane-node-field-event-date {
-  border-top: 1px solid #e0e0e0;
-}
-
-/* line 2998, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 2997, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-node-field-location {
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 18px;
 }
 
 /* Research list */
-/* line 3014, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3013, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .node, #content .pane-events-panel-pane-1 .views-field-title {
   margin: 10px 0px 3px 0px;
 }
-/* line 3017, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3016, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .node h2 a, #content .pane-events-panel-pane-1 .node span a, #content .pane-events-panel-pane-1 .views-field-title h2 a, #content .pane-events-panel-pane-1 .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3023, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3022, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .link-wrapper {
   display: none;
 }
-/* line 3026, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3025, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3030, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3029, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .clearfix:after {
   clear: none;
 }
-/* line 3033, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3032, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .views-field-field-featured-image {
   float: left;
   margin: 8px 15px 15px 0px;
 }
-/* line 3037, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3036, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3041, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3040, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3043, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3042, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .views-field-field-small-teaser p {
   font-size: 1em;
 }
-/* line 3014, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3013, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .node, #content .pane-research-panel-pane-1 .views-field-title {
   margin: 10px 0px 3px 0px;
 }
-/* line 3017, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3016, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .node h2 a, #content .pane-research-panel-pane-1 .node span a, #content .pane-research-panel-pane-1 .views-field-title h2 a, #content .pane-research-panel-pane-1 .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3023, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3022, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .link-wrapper {
   display: none;
 }
-/* line 3026, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3025, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3030, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3029, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .clearfix:after {
   clear: none;
 }
-/* line 3033, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3032, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .views-field-field-featured-image {
   float: left;
   margin: 8px 15px 15px 0px;
 }
-/* line 3037, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3036, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3041, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3040, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3043, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3042, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-research-panel-pane-1 .views-field-field-small-teaser p {
   font-size: 1em;
 }
-/* line 3014, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3013, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .node, #content .pane-learning-panel-pane-1 .views-field-title {
   margin: 10px 0px 3px 0px;
 }
-/* line 3017, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3016, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .node h2 a, #content .pane-learning-panel-pane-1 .node span a, #content .pane-learning-panel-pane-1 .views-field-title h2 a, #content .pane-learning-panel-pane-1 .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3023, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3022, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .link-wrapper {
   display: none;
 }
-/* line 3026, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3025, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3030, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3029, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .clearfix:after {
   clear: none;
 }
-/* line 3033, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3032, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .views-field-field-featured-image {
   float: left;
   margin: 8px 15px 15px 0px;
 }
-/* line 3037, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3036, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3041, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3040, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3043, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3042, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-learning-panel-pane-1 .views-field-field-small-teaser p {
   font-size: 1em;
 }
-/* line 3014, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3013, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .node, #content .pane-engagement-panel-pane-1 .views-field-title {
   margin: 10px 0px 3px 0px;
 }
-/* line 3017, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3016, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .node h2 a, #content .pane-engagement-panel-pane-1 .node span a, #content .pane-engagement-panel-pane-1 .views-field-title h2 a, #content .pane-engagement-panel-pane-1 .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3023, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3022, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .link-wrapper {
   display: none;
 }
-/* line 3026, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3025, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3030, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3029, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .clearfix:after {
   clear: none;
 }
-/* line 3033, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3032, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .views-field-field-featured-image {
   float: left;
   margin: 8px 15px 15px 0px;
 }
-/* line 3037, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3036, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3041, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3040, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3043, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3042, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-engagement-panel-pane-1 .views-field-field-small-teaser p {
   font-size: 1em;
 }
-/* line 3014, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3013, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .node, #content .pane-classes-panel-pane-1 .views-field-title {
   margin: 10px 0px 3px 0px;
 }
-/* line 3017, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3016, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .node h2 a, #content .pane-classes-panel-pane-1 .node span a, #content .pane-classes-panel-pane-1 .views-field-title h2 a, #content .pane-classes-panel-pane-1 .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3023, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3022, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .link-wrapper {
   display: none;
 }
-/* line 3026, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3025, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3030, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3029, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .clearfix:after {
   clear: none;
 }
-/* line 3033, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3032, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .views-field-field-featured-image {
   float: left;
   margin: 8px 15px 15px 0px;
 }
-/* line 3037, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3036, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3041, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3040, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3043, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3042, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-classes-panel-pane-1 .views-field-field-small-teaser p {
   font-size: 1em;
 }
-/* line 3014, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3013, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .node, #content .pane-people-panel-pane-1 .views-field-title {
   margin: 10px 0px 3px 0px;
 }
-/* line 3017, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3016, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .node h2 a, #content .pane-people-panel-pane-1 .node span a, #content .pane-people-panel-pane-1 .views-field-title h2 a, #content .pane-people-panel-pane-1 .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3023, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3022, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .link-wrapper {
   display: none;
 }
-/* line 3026, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3025, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3030, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3029, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .clearfix:after {
   clear: none;
 }
-/* line 3033, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3032, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .views-field-field-featured-image {
   float: left;
   margin: 8px 15px 15px 0px;
 }
-/* line 3037, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3036, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3041, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3040, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3043, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3042, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-people-panel-pane-1 .views-field-field-small-teaser p {
   font-size: 1em;
 }
-/* line 3014, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3013, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .node, #content .pane-organizations-panel-pane-1 .views-field-title {
   margin: 10px 0px 3px 0px;
 }
-/* line 3017, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3016, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .node h2 a, #content .pane-organizations-panel-pane-1 .node span a, #content .pane-organizations-panel-pane-1 .views-field-title h2 a, #content .pane-organizations-panel-pane-1 .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3023, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3022, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .link-wrapper {
   display: none;
 }
-/* line 3026, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3025, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3030, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3029, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .clearfix:after {
   clear: none;
 }
-/* line 3033, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3032, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .views-field-field-featured-image {
   float: left;
   margin: 8px 15px 15px 0px;
 }
-/* line 3037, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3036, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3041, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3040, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3043, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3042, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-organizations-panel-pane-1 .views-field-field-small-teaser p {
   font-size: 1em;
 }
 
-/* line 3055, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3054, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .node, .view-panopoly-database-search .views-field-title {
   margin: 10px 0px;
 }
-/* line 3058, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3057, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .node h2 a, .view-panopoly-database-search .node span a, .view-panopoly-database-search .views-field-title h2 a, .view-panopoly-database-search .views-field-title span a {
   font-size: 1.4em;
 }
-/* line 3064, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3063, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .link-wrapper {
   display: none;
 }
-/* line 3067, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3066, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .views-row {
   border-top: 1px #e0e0e0 solid;
   clear: both;
 }
-/* line 3071, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3070, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .clearfix:after {
   clear: none;
 }
-/* line 3074, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3073, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .views-field-field-featured-image {
   /*float: left;*/
   margin: 8px 15px 15px 0px;
 }
-/* line 3078, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3077, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .views-field-field-featured-image blockquote {
   display: none;
 }
-/* line 3083, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3082, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .views-field-field-small-teaser {
   margin-top: 4px;
 }
-/* line 3085, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3084, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .views-field-field-small-teaser p {
   font-size: 1em;
 }
-/* line 3089, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3088, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view-panopoly-database-search .panopoly-image-quarter {
   /*width: 15%;*/
 }
 
 /* right sidebar */
-/* line 3096, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3095, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-connect-with-us {
   font-family: brandon;
   font-size: 1.2em;
 }
-/* line 3102, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3101, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-connect-with-us strong {
   text-transform: uppercase;
   display: block;
   margin: 0.2em 0em;
 }
-/* line 3107, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3106, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-connect-with-us p {
   margin-bottom: 1em;
 }
 
 /* grant styling */
-/* line 3115, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3114, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .grant-body h1 {
   font-style: italic;
   font-family: brandon;
   color: #444;
 }
-/* line 3120, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3119, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .grant-body h2 {
   font-family: brandon;
   font-size: 1.8em;
 }
-/* line 3123, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3122, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .grant-body h2 a {
   color: #444;
   font-weight: bold;
 }
 
-/* line 3132, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3131, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-news #page-title {
   text-transform: none;
 }
 
-/* line 3132, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3131, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-feature #page-title {
   text-transform: none;
 }
 
-/* line 3132, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3131, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-event #page-title {
   text-transform: none;
 }
 
-/* line 3132, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3131, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-research #page-title {
   text-transform: none;
 }
 
-/* line 3132, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3131, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-learning #page-title {
   text-transform: none;
 }
 
-/* line 3132, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3131, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-engagement #page-title {
   text-transform: none;
 }
 
-/* line 3132, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3131, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .node-type-class #page-title {
   text-transform: none;
 }
 
 /* search */
-/* line 3140, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3139, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-facet {
   background-color: #3b3b3b;
   padding: 6px 23px;
 }
-/* line 3144, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3143, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-facet h2 {
   color: gray;
 }
-/* line 3147, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3146, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-facet .item-list {
   color: white;
 }
-/* line 3149, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3148, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-facet .item-list a {
   color: white;
 }
 
 /* about us */
-/* line 3159, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3158, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .page-node-15 .pane-node-body h2 {
   font-size: 1.4em;
 }
 
 /* related lists */
-/* line 3168, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3167, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .title-context {
   text-transform: none;
 }

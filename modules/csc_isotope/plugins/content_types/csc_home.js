@@ -242,7 +242,7 @@
     $filters.on('click', function(){
       var $this = $(this);
 
-      $filters.find('img').each(function(){
+      $filters.find('img').not($this).each(function(){
         this.src = this.src.replace('_over', '');
       });
 

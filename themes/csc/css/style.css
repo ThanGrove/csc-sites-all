@@ -3266,6 +3266,15 @@ body.logged-in #content {
     background: none;
   }
 }
+@media only screen and (min-width: 641px) and (max-width: 1310px) {
+  /* line 2352, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+  .csc-organization-item,
+  .csc-event-item {
+    float: none;
+    width: auto;
+    background: none;
+  }
+}
 
 /* line 2362, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-event-item h3 {

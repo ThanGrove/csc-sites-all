@@ -96,10 +96,26 @@
         }
       }
       return true;
+    },
+    retrieve = function(key){
+      return window.sessionStorage ? 
+        sessionStorage.getItem(key) : 
+        $.cookie(key);
+    },
+    store = function(key, val){
+      return window.sessionStorage ?
+        sessionStorage.setItem(key, val) :
+        $.cookie(key, val);
+    },
+    remove = function(key){
+      return window.sessionStorage ?
+        sessionStorage.removeItem(key) :
+        $.removeCookie(key);
     };
 
     if( urlIncluded() ) {
       var $el = $('#main-menu').find('a[href*=\"' + url + '\"]'),
+          storageVal = retrieve('expanded'),
           $li;
 
       if($el.length == 1) {
@@ -110,13 +126,13 @@
           $el.addClass('active');
 
           var lid = $el.parent().attr('id');
-          $.cookie('expanded', lid); 
+          store('expanded', lid);
         }
       }
 
       //if mlid of a give li is saved, expand that branch
-      if($.cookie('expanded')){
-        elid = $.cookie('expanded');
+      if(storageVal){
+        elid = storageVal;
         $el = $('#' + elid);
         $parent = $el.parent().parent();
         $parent.removeClass('expanded').addClass('contracted');
@@ -127,7 +143,7 @@
 
     //Reset cookie
     $("#m-1008 > a, #anchor-about, #header-logo > a").bind('click', function(e){
-      $.removeCookie('expanded');
+      remove('expanded');
     });
 
     $(window).resize(function(){

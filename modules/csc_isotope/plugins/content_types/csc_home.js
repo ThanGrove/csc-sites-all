@@ -255,7 +255,7 @@
       var $this = $(this),
           $img = $this.find('img');
 
-      $img[0].src = $img[0].src.replace('.png', '_over.png');
+      $img[0].src = $img[0].src.replace('icon.png', 'icon_over.png');
 
       if(!$filterTip) {
         $filterTip = $('<div id="filter-tip" class="filter-tip">' + getFilterText($this) + '</div>').appendTo('body');

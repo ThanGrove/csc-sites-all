@@ -125,13 +125,24 @@
           $el.addClass('active');
 
           var lid = $el.parent().attr('id');
+
           store('expanded', lid);
+          if(history.replaceState) {
+            history.replaceState({id: lid}, '', location.href);
+          }
         }
       }
 
       //if mlid of a give li is saved, expand that branch
       if(retrieve('expanded')){
-        elid = retrieve('expanded');
+        if( history.state ) {
+          elid = history.state.id;
+        } else {
+          elid = retrieve('expanded');
+          if(history.replaceState) {
+            history.replaceState({id: elid}, '', location.href);
+          }
+        }
         $el = $('#' + elid);
         $parent = $el.parent().parent();
         $parent.removeClass('expanded').addClass('contracted');

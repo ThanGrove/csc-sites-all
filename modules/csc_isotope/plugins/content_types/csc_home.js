@@ -228,7 +228,7 @@
 
     return $filterTip.css({
       top: offset.top + 5 + 'px',
-      left: offset.left - 9 + 'px'
+      left: offset.left - 8 + 'px'
     });
   }
 

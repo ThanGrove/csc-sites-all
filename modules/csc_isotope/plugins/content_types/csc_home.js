@@ -236,7 +236,7 @@
     window.csc.home_layout();
     
     var $filters = $('#filters').find('a'),
-        stick = false;
+        stick;
 
     //Filters
     $filters.on('click', function(){
@@ -246,7 +246,7 @@
         this.src = this.src.replace('_over', '');
       });
 
-      stick = ($this.attr('data-filter') !== '*');
+      stick = this;
 
       filter( $(this) );
       return false;
@@ -267,7 +267,7 @@
     .on('mouseleave', function(){
       var $img = $(this).find('img');
 
-      if(!stick)
+      if(this != stick || this.getAttribute('data-filter') == '*')
         $img[0].src = $img[0].src.replace('_over', '');
 
       $filterTip.hide();

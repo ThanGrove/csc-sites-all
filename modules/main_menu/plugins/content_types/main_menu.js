@@ -115,7 +115,6 @@
 
     if( urlIncluded() ) {
       var $el = $('#main-menu').find('a[href*=\"' + url + '\"]'),
-          storageVal = retrieve('expanded'),
           $li;
 
       if($el.length == 1) {
@@ -131,8 +130,8 @@
       }
 
       //if mlid of a give li is saved, expand that branch
-      if(storageVal){
-        elid = storageVal;
+      if(retrieve('expanded')){
+        elid = retrieve('expanded');
         $el = $('#' + elid);
         $parent = $el.parent().parent();
         $parent.removeClass('expanded').addClass('contracted');

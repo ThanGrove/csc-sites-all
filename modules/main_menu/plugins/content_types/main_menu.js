@@ -90,6 +90,9 @@
         url = location.href.split('/').slice(3).join('/');
 
     var urlIncluded = function() {
+      if(~url.indexOf('search/site'))
+        return false;
+
       for (var i = 0; i < excludeUrls.length; i += 1) {
         if( url === excludeUrls[i] ) {
           return false;

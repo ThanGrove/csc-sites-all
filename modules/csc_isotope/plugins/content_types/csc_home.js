@@ -235,10 +235,15 @@
   $(window).load(function() {    
     window.csc.home_layout();
     
+    var $filters = $('#filters').find('a');
     //Filters
-    $('#filters a').on('click', function(){
-        filter( $(this) );
-        return false;
+    $filters.on('click', function(){
+      $filters.find('img').each(function(){
+        this.src = this.src.replace('_over', '');
+      });
+      this.src = $(this).find('img')[0].src;
+      filter( $(this) );
+      return false;
     })
     .on('mouseenter', function(){
       var $this = $(this);

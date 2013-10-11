@@ -87,7 +87,8 @@
           'content/home',
           'content/about-us'
         ],
-        url = location.href.split('/').slice(3).join('/');
+        url = location.href.split('/').slice(3).join('/'),
+        haveHistory = window.history;
 
     var urlIncluded = function() {
       if(~url.indexOf('search/site'))
@@ -130,19 +131,19 @@
           var lid = $el.parent().attr('id');
 
           store('expanded', lid);
-          if(history.replaceState) {
+          if(haveHistory && history.replaceState) {
             history.replaceState({id: lid}, '', location.href);
           }
         }
       }
 
       //if mlid of a give li is saved, expand that branch
-      if(retrieve('expanded')){
-        if( history.state ) {
+      if((haveHistory && history.state) || retrieve('expanded')){
+        if( haveHistory && history.state ) {
           elid = history.state.id;
         } else {
           elid = retrieve('expanded');
-          if(history.replaceState) {
+          if(haveHistory) {
             history.replaceState({id: elid}, '', location.href);
           }
         }

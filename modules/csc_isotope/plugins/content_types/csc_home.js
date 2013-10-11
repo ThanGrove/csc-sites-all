@@ -235,18 +235,28 @@
   $(window).load(function() {    
     window.csc.home_layout();
     
-    var $filters = $('#filters').find('a');
+    var $filters = $('#filters').find('a'),
+        stick = false;
+
     //Filters
     $filters.on('click', function(){
+      var $this = $(this);
+
       $filters.find('img').each(function(){
         this.src = this.src.replace('_over', '');
       });
-      this.src = $(this).find('img')[0].src;
+
+      stick = ($this.attr('data-filter') !== '*');
+
       filter( $(this) );
       return false;
     })
     .on('mouseenter', function(){
-      var $this = $(this);
+      var $this = $(this),
+          $img = $this.find('img');
+
+      $img[0].src = $img[0].src.replace('.png', '_over.png');
+
       if(!$filterTip) {
         $filterTip = $('<div id="filter-tip" class="filter-tip">' + getFilterText($this) + '</div>').appendTo('body');
       } else {
@@ -255,6 +265,11 @@
       positionFilterTip($this).show();
     })
     .on('mouseleave', function(){
+      var $img = $(this).find('img');
+
+      if(!stick)
+        $img[0].src = $img[0].src.replace('_over', '');
+
       $filterTip.hide();
     });
   });

@@ -81,33 +81,50 @@
     });
 
     //Auto expand for active sub-menus
-    var url = location.href.split('/').slice(3).join('/'),
-        $el = $('#main-menu').find('a[href*=\"' + url + '\"]'),
-        $li;
+    //
+    var excludeUrls = [
+          '',
+          'content/home',
+          'content/about-us'
+        ],
+        url = location.href.split('/').slice(3).join('/');
 
-    if($el.length == 1) {
-      $li = $el.closest('li.expanded');
-      if ($li.length) {
-        $li.removeClass('expanded').addClass('contracted');
-        $li.closest('ul').show();
-        $el.addClass('active');
-        
-        var lid = $el.parent().attr('id');
-        $.cookie('expanded', lid); 
+    var urlIncluded = function() {
+      for (var i = 0; i < excludeUrls.length; i += 1) {
+        if( url === excludeUrls[i] ) {
+          return false;
+        }
+      }
+      return true;
+    };
+
+    if( urlIncluded() ) {
+      var $el = $('#main-menu').find('a[href*=\"' + url + '\"]'),
+          $li;
+
+      if($el.length == 1) {
+        $li = $el.closest('li.expanded');
+        if ($li.length) {
+          $li.removeClass('expanded').addClass('contracted');
+          $li.closest('ul').show();
+          $el.addClass('active');
+
+          var lid = $el.parent().attr('id');
+          $.cookie('expanded', lid); 
+        }
+      }
+
+      //if mlid of a give li is saved, expand that branch
+      if($.cookie('expanded')){
+        elid = $.cookie('expanded');
+        $el = $('#' + elid);
+        $parent = $el.parent().parent();
+        $parent.removeClass('expanded').addClass('contracted');
+
+        $el.addClass('active').children('a').addClass('active');
       }
     }
-    
-    //if mlid of a give li is saved, expand that branch
-    if($.cookie('expanded')){
-      elid = $.cookie('expanded');
-      $el = $('#' + elid);
-      $parent = $el.parent().parent();
-      $parent.removeClass('expanded').addClass('contracted');
 
-      $el.addClass('active');
-      $el.children('a').addClass('active');
-    }
-    
     //Reset cookie
     $("#m-1008 > a, #anchor-about, #header-logo > a").bind('click', function(e){
       $.removeCookie('expanded');

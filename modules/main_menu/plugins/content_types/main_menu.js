@@ -152,6 +152,8 @@
 
         $el.addClass('active').children('a').addClass('active');
       }
+    } else {
+      remove('expanded');
     }
 
     //Reset cookie

@@ -88,7 +88,7 @@ font-face {
 /* ---------- Overall Specifications ---------- */
 /* line 47, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 body {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 1em;
   word-wrap: break-word;
   margin: 0;
@@ -96,7 +96,7 @@ body {
   border: 0;
   outline: 0;
   background-color: #e8e7e5;
-  font-family: brandon, Georgia;
+  font-family: brandon;
 }
 
 /* line 59, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -3102,7 +3102,7 @@ body.logged-in #content {
 .pane-csc-related-research {
   float: left;
   width: 100%;
-  font-size: 1em;
+  font-size: 0.9em;
   padding: 20px 0 20px 0;
   margin-top: 20px;
   border-top: 1px solid #e0e0e0;

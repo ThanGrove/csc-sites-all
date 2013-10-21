@@ -81,34 +81,11 @@ function auto_related_save_related_old($eid, $tid){
 }
 
 function auto_related_save_related($eid, $tid){
- 
   $node = node_load($eid);
   
-  $lng = $node->language;
-  $delta = sizeof($node->field_related[$lng]);
-  
-  $node->field_related[$lng][$delta]['target_id'] = $tid;
-  node_save($node);
-}
-
-function auto_related_node_presave($n){
-  $lng = $n->language;
-  $delta = sizeof($n->field_related[$lng]);
-
-  $p = array();
-  for($i=0; $i < sizeof($_POST['field_related'][$lng]); $i++){
-    $start = strrpos($_POST['field_related'][$lng][$i]['target_id'], '(', -1) +1;
-    $len = strlen($_POST['field_related'][$lng][$i]['target_id']);
-    $p[] = substr($_POST['field_related'][$lng][$i]['target_id'], $start, $len - $start -1);
-  } 
-
- drupal_set_message("Post: " . var_export($p,true));  
-   
-  foreach($n->field_related[$lng] as $k => $v){
-    if(!in_array($v['target_id'], $p)) drupal_set_message("Delete: " . $v['target_id']);
-  }
-  
-//  drupal_set_message("Before: $delta");
-  
-//  drupal_set_message("Now: " . sizeof($_POST['field_related'][$lng]));  
+  $delta = sizeof($node->field_related);
+  drupal_set_message("Delta: $delta");
+  drupal_set_message("Language: " . $node->language);
+  //$node->field_fieldname['und'][0]['value'] = $val;
+  //node_save($node);
 }

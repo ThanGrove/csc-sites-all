@@ -1,9 +1,4 @@
 /* Global variables, mixins, etc. */
-/* line 28, ../../../../../sass/_global.scss */
-.highlight {
-  background-color: #ffba09;
-}
-
 /* line 95, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-directors > h2, #content .pane-events-panel-pane-1 .views-label, #event-nav
 .pane-node-field-event-date h2, .pane-node-field-location h2, .page-node-15 .pane-node-body h2, .filter-tip {
@@ -173,6 +168,7 @@ img {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+  background-color: #FFECBB;
   padding: 0em 0.2em;
 }
 

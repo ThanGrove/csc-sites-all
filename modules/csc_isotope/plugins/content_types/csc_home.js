@@ -234,7 +234,7 @@
 
   function trackEvent(el) {
     if ( window._gaq )
-      _.gaq.push(['_trackEvent', 'Filters', 'click', el.getAttribute('data-filter')]);
+      _gaq.push(['_trackEvent', 'Filters', 'click', el.getAttribute('data-filter')]);
   }
 
   $(window).load(function() {    

@@ -4661,22 +4661,22 @@ body.logged-in #content {
   margin-top: 0px;
   background-color: #dfdfdf;
 }
-/* line 3278, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3279, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view .date-nav-wrapper .date-heading {
   top: 0.55em;
 }
-/* line 3281, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3282, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view .date-nav-wrapper .date-nav.item-list {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
-/* line 3284, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3285, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view .date-nav-wrapper .date-nav.item-list .pager {
   margin: 0px;
   padding: 0px;
   margin-bottom: 1.2em;
 }
-/* line 3289, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3290, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .view .date-nav-wrapper .date-nav.item-list .date-prev, .view .date-nav-wrapper .date-nav.item-list .date-next {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -4685,7 +4685,15 @@ body.logged-in #content {
   border-radius: 0px;
 }
 
-/* line 3294, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
+/* line 3295, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.calendar-calendar .month-view .full td.single-day div.monthview {
   background: none;
+}
+/* line 3298, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.calendar-calendar .month-view .full td.single-day div.monthview .views-field {
+  display: inline;
+}
+/* line 3300, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.calendar-calendar .month-view .full td.single-day div.monthview .views-field .field-content {
+  display: inline;
 }

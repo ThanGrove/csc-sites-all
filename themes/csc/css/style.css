@@ -3071,7 +3071,7 @@ body.logged-in #content {
  */
 /* line 2217, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-newsletter {
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0px;
   width: 150px;
   float: left;
@@ -3082,7 +3082,7 @@ body.logged-in #content {
 }
 /* line 2227, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-newsletter h2.pane-title {
-  font-size: 1.1em !important;
+  font-size: 0.9em !important;
   margin-bottom: 0px;
 }
 /* line 2231, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -3092,8 +3092,8 @@ body.logged-in #content {
 @media only screen and (max-height: 810px) {
   /* line 2217, ../../../../../sass/sites/all/themes/csc/css/style.scss */
   .pane-csc-newsletter {
-    margin-top: 0px;
-    position: static;
+    /*margin-top: 0px;*/
+    /*position: static;*/
   }
 }
 

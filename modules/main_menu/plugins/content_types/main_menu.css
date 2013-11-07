@@ -1,11 +1,11 @@
 /* Global variables, mixins, etc. */
-/* line 85, ../../../../../../sass/_global.scss */
+/* line 90, ../../../../../../sass/_global.scss */
 #main-menu a.active, #main-menu > li.first a.active:hover {
   background-color: #444;
   color: white;
 }
 
-/* line 90, ../../../../../../sass/_global.scss */
+/* line 95, ../../../../../../sass/_global.scss */
 #main-menu a, #main-menu > li.first a.active {
   background-color: white;
   color: #444;

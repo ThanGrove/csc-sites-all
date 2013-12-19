@@ -5084,3 +5084,13 @@ body.page-list-class .list-filter-wrapper form {
 .list-filter-wrapper .chosen-container, .list-filter-wrapper select {
   text-align: left;
 }
+
+/* jquery ui overrides */
+/* line 3617, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.ui-dialog .ui-dialog-content {
+  padding: 1em;
+}
+/* line 3620, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.ui-dialog input {
+  margin-right: 0.4em;
+}

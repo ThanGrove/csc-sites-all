@@ -3438,6 +3438,15 @@ body.logged-in #content {
     background: none;
   }
 }
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  /* line 2496, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+  .csc-organization-item,
+  .csc-event-item {
+    float: none;
+    width: auto;
+    background: none;
+  }
+}
 @media only screen and (min-width: 961px) and (max-width: 1279px) {
   /* line 2496, ../../../../../sass/sites/all/themes/csc/css/style.scss */
   .csc-organization-item,
@@ -3698,6 +3707,12 @@ body.page-node-21 .csc-people-detail:hover {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 960px) {
+  /* line 2675, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+  .csc-directors-wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1279px) {
   /* line 2675, ../../../../../sass/sites/all/themes/csc/css/style.scss */
   .csc-directors-wrapper {
     width: 100%;

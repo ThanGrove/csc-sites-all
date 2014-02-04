@@ -5117,8 +5117,3 @@ body.page-list-class .list-filter-wrapper form {
 .ui-dialog input {
   margin-right: 0.4em;
 }
-
-/* line 3630, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-#main-menu {
-  background-color: red;
-}

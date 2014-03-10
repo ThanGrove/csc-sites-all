@@ -5136,3 +5136,10 @@ body.page-list-class .list-filter-wrapper form {
 .pane-csc-ctype + div + .pane-node-title {
   margin-top: 1.3em;
 }
+@media only screen and (max-width: 640px) {
+  /* line 3634, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+  .pane-csc-ctype {
+    top: -41px;
+    right: -20px;
+  }
+}

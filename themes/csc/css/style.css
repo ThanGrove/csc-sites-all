@@ -5149,3 +5149,8 @@ body.page-list-class .list-filter-wrapper form {
 .page-node-add-people #node-edit .form-item-title {
   display: none;
 }
+
+/* line 3657, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.adr .geo {
+  display: none;
+}

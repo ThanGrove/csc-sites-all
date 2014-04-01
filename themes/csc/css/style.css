@@ -5143,3 +5143,9 @@ body.page-list-class .list-filter-wrapper form {
     right: -20px;
   }
 }
+
+/* line 3652, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.node-type-people #node-edit .form-item-title,
+.page-node-add-people #node-edit .form-item-title {
+  display: none;
+}

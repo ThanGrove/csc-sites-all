@@ -1,66 +1,68 @@
 /* Global variables, mixins, etc. */
-/* line 106, ../../../../../sass/_global.scss */
+/* line 96, ../../../../../sass/_global.scss */
+#content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2, .pane-csc-directors > h2, #content .pane-events-panel-pane-1 .views-label, .pane-node-field-event-date h2.pane-title, .pane-node-field-location h2, .page-node-264 .pane-node-body h2, .page-node-215 .pane-node-body h2, .filter-tip, .pane-csc-related-research h2 a, .pane-csc-related-events h2 a, .pane-csc-related-activities h2 a, .pane-csc-related-classes h2 a, .pane-csc-important-dates h3, .pane-csc-latest-news h3 a, #content .pane-events-panel-pane-1 .node h2 a, #content .pane-events-panel-pane-1 .node span a, #content .pane-events-panel-pane-1 .views-field-title h2 a, #content .pane-events-panel-pane-1 .views-field-title span a, #content .pane-research-panel-pane-1 .node h2 a, #content .pane-research-panel-pane-1 .node span a, #content .pane-research-panel-pane-1 .views-field-title h2 a, #content .pane-research-panel-pane-1 .views-field-title span a, #content .pane-learning-panel-pane-1 .node h2 a, #content .pane-learning-panel-pane-1 .node span a, #content .pane-learning-panel-pane-1 .views-field-title h2 a, #content .pane-learning-panel-pane-1 .views-field-title span a, #content .pane-engagement-panel-pane-1 .node h2 a, #content .pane-engagement-panel-pane-1 .node span a, #content .pane-engagement-panel-pane-1 .views-field-title h2 a, #content .pane-engagement-panel-pane-1 .views-field-title span a, #content .pane-classes-panel-pane-1 .node h2 a, #content .pane-classes-panel-pane-1 .node span a, #content .pane-classes-panel-pane-1 .views-field-title h2 a, #content .pane-classes-panel-pane-1 .views-field-title span a, #content .pane-people-panel-pane-1 .node h2 a, #content .pane-people-panel-pane-1 .node span a, #content .pane-people-panel-pane-1 .views-field-title h2 a, #content .pane-people-panel-pane-1 .views-field-title span a, #content .pane-organizations-panel-pane-1 .node h2 a, #content .pane-organizations-panel-pane-1 .node span a, #content .pane-organizations-panel-pane-1 .views-field-title h2 a, #content .pane-organizations-panel-pane-1 .views-field-title span a, .view-panopoly-database-search .node h2 a, .view-panopoly-database-search .node span a, .view-panopoly-database-search .views-field-title h2 a, .view-panopoly-database-search .views-field-title span a, .csc-connect-with-us em, .csc-lists-container .list-item-title, .see-all a, .see-all-research a {
+  font-family: Brandon, Georgia;
+}
+
+/* line 110, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2, .pane-csc-directors > h2, #content .pane-events-panel-pane-1 .views-label, .pane-node-field-event-date h2.pane-title, .pane-node-field-location h2, .page-node-264 .pane-node-body h2, .page-node-215 .pane-node-body h2, .filter-tip {
-  font-family: brandon;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 112, ../../../../../sass/_global.scss */
+/* line 116, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2 {
   font-size: 2em;
   margin-top: 0px;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 1280px) and (max-width: 2000px) {
-  /* line 112, ../../../../../sass/_global.scss */
+  /* line 116, ../../../../../sass/_global.scss */
   #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2 {
     font-size: 3em;
   }
 }
 @media only screen and (min-width: 2001px) {
-  /* line 112, ../../../../../sass/_global.scss */
+  /* line 116, ../../../../../sass/_global.scss */
   #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2 {
     font-size: 3em;
   }
 }
 
-/* line 122, ../../../../../sass/_global.scss */
+/* line 126, ../../../../../sass/_global.scss */
 .pane-csc-related-research h2 a, .pane-csc-related-events h2 a, .pane-csc-related-activities h2 a, .pane-csc-related-classes h2 a, .pane-csc-important-dates h3, .pane-csc-latest-news h3 a, #content .pane-events-panel-pane-1 .node h2 a, #content .pane-events-panel-pane-1 .node span a, #content .pane-events-panel-pane-1 .views-field-title h2 a, #content .pane-events-panel-pane-1 .views-field-title span a, #content .pane-research-panel-pane-1 .node h2 a, #content .pane-research-panel-pane-1 .node span a, #content .pane-research-panel-pane-1 .views-field-title h2 a, #content .pane-research-panel-pane-1 .views-field-title span a, #content .pane-learning-panel-pane-1 .node h2 a, #content .pane-learning-panel-pane-1 .node span a, #content .pane-learning-panel-pane-1 .views-field-title h2 a, #content .pane-learning-panel-pane-1 .views-field-title span a, #content .pane-engagement-panel-pane-1 .node h2 a, #content .pane-engagement-panel-pane-1 .node span a, #content .pane-engagement-panel-pane-1 .views-field-title h2 a, #content .pane-engagement-panel-pane-1 .views-field-title span a, #content .pane-classes-panel-pane-1 .node h2 a, #content .pane-classes-panel-pane-1 .node span a, #content .pane-classes-panel-pane-1 .views-field-title h2 a, #content .pane-classes-panel-pane-1 .views-field-title span a, #content .pane-people-panel-pane-1 .node h2 a, #content .pane-people-panel-pane-1 .node span a, #content .pane-people-panel-pane-1 .views-field-title h2 a, #content .pane-people-panel-pane-1 .views-field-title span a, #content .pane-organizations-panel-pane-1 .node h2 a, #content .pane-organizations-panel-pane-1 .node span a, #content .pane-organizations-panel-pane-1 .views-field-title h2 a, #content .pane-organizations-panel-pane-1 .views-field-title span a, .view-panopoly-database-search .node h2 a, .view-panopoly-database-search .node span a, .view-panopoly-database-search .views-field-title h2 a, .view-panopoly-database-search .views-field-title span a, .csc-connect-with-us em, .csc-lists-container .list-item-title {
   font-size: 18px;
   color: #3b3b3b;
   font-style: italic;
   font-weight: normal;
-  font-family: brandon;
 }
-/* line 128, ../../../../../sass/_global.scss */
+/* line 132, ../../../../../sass/_global.scss */
 .pane-csc-related-research h2 a:hover, .pane-csc-related-events h2 a:hover, .pane-csc-related-activities h2 a:hover, .pane-csc-related-classes h2 a:hover, .pane-csc-important-dates h3:hover, .pane-csc-latest-news h3 a:hover, #content .pane-events-panel-pane-1 .node h2 a:hover, #content .pane-events-panel-pane-1 .node span a:hover, #content .pane-events-panel-pane-1 .views-field-title h2 a:hover, #content .pane-events-panel-pane-1 .views-field-title span a:hover, #content .pane-research-panel-pane-1 .node h2 a:hover, #content .pane-research-panel-pane-1 .node span a:hover, #content .pane-research-panel-pane-1 .views-field-title h2 a:hover, #content .pane-research-panel-pane-1 .views-field-title span a:hover, #content .pane-learning-panel-pane-1 .node h2 a:hover, #content .pane-learning-panel-pane-1 .node span a:hover, #content .pane-learning-panel-pane-1 .views-field-title h2 a:hover, #content .pane-learning-panel-pane-1 .views-field-title span a:hover, #content .pane-engagement-panel-pane-1 .node h2 a:hover, #content .pane-engagement-panel-pane-1 .node span a:hover, #content .pane-engagement-panel-pane-1 .views-field-title h2 a:hover, #content .pane-engagement-panel-pane-1 .views-field-title span a:hover, #content .pane-classes-panel-pane-1 .node h2 a:hover, #content .pane-classes-panel-pane-1 .node span a:hover, #content .pane-classes-panel-pane-1 .views-field-title h2 a:hover, #content .pane-classes-panel-pane-1 .views-field-title span a:hover, #content .pane-people-panel-pane-1 .node h2 a:hover, #content .pane-people-panel-pane-1 .node span a:hover, #content .pane-people-panel-pane-1 .views-field-title h2 a:hover, #content .pane-people-panel-pane-1 .views-field-title span a:hover, #content .pane-organizations-panel-pane-1 .node h2 a:hover, #content .pane-organizations-panel-pane-1 .node span a:hover, #content .pane-organizations-panel-pane-1 .views-field-title h2 a:hover, #content .pane-organizations-panel-pane-1 .views-field-title span a:hover, .view-panopoly-database-search .node h2 a:hover, .view-panopoly-database-search .node span a:hover, .view-panopoly-database-search .views-field-title h2 a:hover, .view-panopoly-database-search .views-field-title span a:hover, .csc-connect-with-us em:hover, .csc-lists-container .list-item-title:hover {
   color: #888888;
 }
 
-/* line 133, ../../../../../sass/_global.scss */
+/* line 137, ../../../../../sass/_global.scss */
 .see-all a, .see-all-research a, .pane-csc-related-activities .see-all a, .pane-csc-related-classes .see-all a {
   position: relative;
   font-size: 11px;
   font-weight: bold;
-  font-family: brandon;
   color: #3c3c3c;
   background: url(../images/rounded_black_arrow.png) right no-repeat;
   padding-right: 22px;
 }
-/* line 142, ../../../../../sass/_global.scss */
+/* line 146, ../../../../../sass/_global.scss */
 .see-all a:hover, .see-all-research a:hover {
   color: #898989;
   left: 2px;
   padding-right: 24px;
 }
 
-/* line 149, ../../../../../sass/_global.scss */
+/* line 153, ../../../../../sass/_global.scss */
 .csc-3col-first, .page-list .csc-panel-col-right {
   background: white url(../images/gray_line_bg.gif) left repeat-y;
 }
 
-/* line 153, ../../../../../sass/_global.scss */
+/* line 157, ../../../../../sass/_global.scss */
 .list-filter-wrapper .audience-filter, .list-filter-wrapper .pipe-separator, .list-filter-wrapper form, .list-filter-wrapper .sort-label {
   display: -moz-inline-stack;
   display: inline-block;
@@ -3309,7 +3311,7 @@ body.front .pane-csc-newsletter {
   color: white;
   background: url(../images/rounded_white_arrow.png) right no-repeat;
 }
-/* line 161, ../../../../../sass/_global.scss */
+/* line 165, ../../../../../sass/_global.scss */
 .see-all a:hover {
   color: #cccccc;
 }

@@ -4973,8 +4973,7 @@ body.logged-in #content {
 /*.csc-lists-container h2 { width: 100%; clear: both; font-size: 26px; color: #0099ff; border-bottom: 1px solid #d0d0d0; }*/
 /* line 3510, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .past {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
+  /*@include opacity(0.7);*/
 }
 
 /* calendar styles */

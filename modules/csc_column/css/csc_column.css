@@ -14,17 +14,17 @@
   -moz-transition-duration: 200ms;
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transform: translateX(340px);
-  -moz-transform: translateX(340px);
-  -ms-transform: translateX(340px);
-  -o-transform: translateX(340px);
-  transform: translateX(340px);
+  -webkit-transform: translateX(591px);
+  -moz-transform: translateX(591px);
+  -ms-transform: translateX(591px);
+  -o-transform: translateX(591px);
+  transform: translateX(591px);
   position: fixed;
   right: 0px;
   top: 76px;
   z-index: 50;
   height: 100%;
-  width: 339px;
+  width: 590px;
   min-height: 750px;
   opacity: 0.98;
   border-left: solid 1px #e0e0e0;
@@ -153,7 +153,7 @@
 /* line 113, ../../../../../sass/sites/all/modules/csc_column/css/csc_column.scss */
 #csc-column-content {
   float: left;
-  width: 312px;
+  width: 550px;
   padding: 20px;
 }
 

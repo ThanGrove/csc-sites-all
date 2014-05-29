@@ -5152,7 +5152,13 @@ body.page-list-class .list-filter-wrapper form {
   display: none;
 }
 
-/* line 3658, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/* line 3657, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+.pane-csc-directors > .pane-content {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 3663, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .adr .geo {
   display: none;
 }

@@ -26,8 +26,6 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
   $type = arg(1);
   $nid = (int)arg(2);
   $types = array_keys(node_type_get_types());
-  $types[] = 'organizations';
-
   if(!in_array($type, $types)) return;
 
   switch($type){
@@ -303,10 +301,8 @@ function csc_lists_select($sortArg) {
   $type = arg(1);
   $nid = (int)arg(2);
   $types = array_keys(node_type_get_types());
-  $types[] = 'organizations';
-
   if(!in_array($type, $types)) return;
-
+  
   $output = '';
 
   switch($type){
@@ -318,7 +314,6 @@ function csc_lists_select($sortArg) {
       break;
     case 'class':
       $sort = array('Date Offered' => array('offered' => 'Upcoming'), 'Title' => array('title_asc' => 'A-Z', 'title_desc' => 'Z-A'), 'Date Added' => array('date_desc' => 'Newest First', 'date_asc' => 'Oldest First'), 'School' => array('school' => 'School A-Z'));
-      $filter = array();
       $sort_default = 'date_desc';
       //$filter = array('upcoming' => 'Upcoming', 'ongoing' => 'Ongoing', 'past' => 'Past');
       break;
@@ -545,7 +540,7 @@ function csc_lists_offered_render($qry){
   }
 
   if($up){
-    $output .= "<div class='clear'></div><h2 class='lower'>Ongoing &amp; Upcoming</h2>\n";
+    $output .= "<div class='clear'></div><h2 class='lower'>Highlights</h2>\n";
     $output .= "<div class='list-group'>$up</div>";
   }
   if($on){
@@ -553,7 +548,7 @@ function csc_lists_offered_render($qry){
     $output .= $on;
   }
   if($past){
-    $output .= "<div class='clear'></div><h2 class='lower'>Past</h2>\n";
+    $output .= "<div class='clear'></div><h2 class='lower'>All</h2>\n";
     $output .= "<div class='list-group'>$past</div>";
   }
 

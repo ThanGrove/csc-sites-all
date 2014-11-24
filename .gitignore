@@ -8,4 +8,5 @@ settings.php
 
 # mac garbage
 *.DS_Store
+.project
 

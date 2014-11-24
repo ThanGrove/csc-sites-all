@@ -5138,6 +5138,11 @@ body.page-list-class .list-filter-wrapper form {
 .pane-csc-ctype + div + .pane-node-title {
   margin-top: 1.3em;
 }
+
+.pane-node-title + div + .pane-node-field-email-person {
+margin: -12px 0 8px 0;
+}
+
 @media only screen and (max-width: 640px) {
   /* line 3635, ../../../../../sass/sites/all/themes/csc/css/style.scss */
   .pane-csc-ctype {

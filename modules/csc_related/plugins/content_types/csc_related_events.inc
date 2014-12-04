@@ -63,9 +63,9 @@ function csc_related_events_render($subtype, $conf, $panel_args, $context = NULL
     $r = db_query($qry);
     foreach($r as $row) $nids[] = $row->entity_id;
   }
-
+ 
   if(sizeof($nids)){
-    $output = '<div class="see-all"><a href="'. url('list/events/' . csc_related_current_nid()) .'">SEE ALL</a></div>';
+    $output = '<div class="see-all"><a href="'. url('events/' . csc_related_current_nid()) .'">SEE ALL</a></div>';
     $class = 'csc-item-num-' . sizeof($nids);
     foreach($nids as $nid){
       $node = node_load($nid);

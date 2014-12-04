@@ -4770,6 +4770,12 @@ body.logged-in #content {
 }
 
 /* related lists */
+
+.title-context:before {
+content: '\A';
+white-space: pre;
+}
+
 /* line 3356, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .title-context {
   text-transform: none;

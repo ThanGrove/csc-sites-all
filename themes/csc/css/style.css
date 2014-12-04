@@ -4779,6 +4779,7 @@ white-space: pre;
 /* line 3356, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .title-context {
   text-transform: none;
+  font-size: .9em;
 }
 
 @media only screen and (max-width: 640px) {

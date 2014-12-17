@@ -2,7 +2,7 @@
 
 $plugin = array(
   'single' => TRUE,
-  'title' => t('Main memu'),
+  'title' => t('Main menu'),
   'description' => t('Shows main menu.'),
   'category' => t('CSC Plugins'),
   'render callback' => 'main_menu_render',

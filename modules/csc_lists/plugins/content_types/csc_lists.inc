@@ -284,7 +284,7 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
   }
 
   $qry = "SELECT n.nid $fields FROM {node} n $join $tables WHERE n.status = '1' AND n.type = '$node_type' $where $group ORDER BY $sort_by $order";
-
+	//dpm($qry, 'query');
   //$output = csc_lists_select();
   $output = '<div class="list-items ' . $render_function . '">' . $render_function($qry) . '</div>';
   $output .= '<script>jQuery(".list-item").dotdotdot({watch: true, height: 150})</script>';

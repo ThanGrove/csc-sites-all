@@ -1,4 +1,5 @@
 name = CSC Frist Image
 description = Returns first image available from a View node list
+package = CSC
 version = 7.x-1.0
 core = 7.x

@@ -1,5 +1,6 @@
 name = CSC Read Block
 description = Read content from different blocks and show them as widgets
+package = CSC
 dependencies[] = block
 version = 7.x-1.0
 core = 7.x

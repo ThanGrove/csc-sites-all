@@ -1,0 +1,5 @@
+name = CSC Event Date
+description = Date panel for events to hide time if TBA field is clicked on node
+package = CSC
+version = 7.x-1.0
+core = 7.x

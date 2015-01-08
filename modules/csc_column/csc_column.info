@@ -1,5 +1,6 @@
 name = CSC Right column
 description = Right column to show dynamic content
+package = CSC
 dependencies[] = block
 version = 7.x-1.0
 core = 7.x

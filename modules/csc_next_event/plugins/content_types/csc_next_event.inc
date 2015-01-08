@@ -48,11 +48,12 @@ function csc_next_event_render($subtype, $conf, $panel_args, $context = NULL) {
     }
 
     $location_name = isset($node->field_location[$lng][0]['name']) ? $node->field_location[$lng][0]['name'] : '';
-
+		$tstamp = ($tstamp == '') ? 'TBA' : format_date($tstamp, 'small');
+		
     $output = '<div class="csc-item-container">';
     $output.= '<div class="csc-event-text-container'.$class.'">';
     $output.= "<h3>" . l($node->title, "node/" . $node->nid). "</h3>";
-    $output.= '<span class="when">WHEN:</span> ' . format_date($tstamp, 'small') . "<br>";
+    $output.= '<span class="when">WHEN:</span> ' . $tstamp  . "<br>";
     $output.= '<span class="when">WHERE: </span>' . $location_name . "<br>";
     $output.= '<div class="event-desc">' . $node->field_teaser[$lng][0]['value'] . "</div>";
     $output.= '<p>' . l('CONTINUE READING', "node/" . $node->nid, array('attributes' => array('class' => 'white-link')))  . '</p>';

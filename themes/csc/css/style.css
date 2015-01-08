@@ -4314,6 +4314,7 @@ body.logged-in #content {
 /* Events list */
 /* line 3140, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .views-field-field-location {
+	display: inline-block;
   margin: 8px 0px 0px 0px;
 }
 /* line 3143, ../../../../../sass/sites/all/themes/csc/css/style.scss */

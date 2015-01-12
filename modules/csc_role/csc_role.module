@@ -1,8 +1,9 @@
 <?php
+
 /**
  * Implements hook_ctools_plugin_directory().
  */
-function csc_staff_ctools_plugin_directory($owner, $plugin_type) {
+function csc_role_ctools_plugin_directory($owner, $plugin_type) {
   if ($owner == 'ctools' && $plugin_type == 'content_types') {
     return 'plugins/' . $plugin_type;
   }
@@ -11,12 +12,12 @@ function csc_staff_ctools_plugin_directory($owner, $plugin_type) {
 /**
  * Implements hook_theme
  */ 
-function csc_staff_theme() {
+function csc_role_theme() {
     return array(
 
-        'csc_staff_item' => array(
+        'csc_role_item' => array(
           'render element' => 'element',
-          'file' => 'plugins/content_types/csc_staff.inc',
+          'file' => 'plugins/content_types/csc_role.inc',
         ),
     );
 }

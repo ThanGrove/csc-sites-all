@@ -1,0 +1,5 @@
+name = CSC Role
+description = Creates a content pane to show a list of CSC personnel belonging to a admin-determined role: directors, staff, fellows
+package = CSC
+version = 7.x-1.0
+core = 7.x

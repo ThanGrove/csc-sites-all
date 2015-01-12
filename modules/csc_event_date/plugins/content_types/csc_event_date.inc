@@ -40,7 +40,7 @@ function csc_event_date_render($subtype, $conf, $panel_args, $context = NULL) {
 
       $output = '<div id="csc-event-date">';
       foreach($dout['#items'] as $n => $item) {
-      	$output .= $dout[$n]['#markup'] . ' - TBA';
+      	$output .= $dout[$n]['#markup'] . ', Time TBA';
       }
       $output.= "</div>\n";
 

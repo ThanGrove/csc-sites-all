@@ -2,11 +2,15 @@
 
 $plugin = array(
   'single' => TRUE,
-  'title' => t('CSC Role'),
-  'description' => t('Shows CSC Role'),
+  'title' => t('CSC Personnel'),
+  'description' => t('Shows CSC Personnel by their role'),
   'category' => t('CSC Plugins'),
   'render callback' => 'csc_role_render',
+  'edit form' => 'csc_role_edit_form',
   'admin info' => 'csc_role_info',
+  'defaults' => array(
+		'role' => 0,
+	),
 );
 
 /**
@@ -22,12 +26,56 @@ function csc_role_info($subtype, $conf, $contexts) {
 }
 
 
+
+/**
+ * 'Edit form' callback for the content type.
+ */
+
+function csc_role_edit_form($form, &$form_state) {
+
+  $conf = $form_state['conf'];
+
+  /*$form['description'] = array(
+    '#title' => t('Description'),
+    '#description' => t('Description (administrative)'),
+    '#type' => 'textfield',
+    '#required' => FALSE,
+    '#default_value' => $conf['description'],
+  );*/
+	
+	$form['role'] = array(
+       '#type' => 'select',
+       '#title' => t('Role'),
+       '#options' => array(
+          0 => t('None'),
+         	1 => t('Director'),
+         	2 => t('Staff'),
+       ),
+       '#default_value' => (empty($conf['role'])) ? 0 : $conf['role'],
+       '#description' => t('Choose the CSC role you want to list in this pane'),
+  );
+  return $form;
+
+}
+
+/**
+ * The submit form stores the data in $conf.
+ */
+ 
+function csc_role_edit_form_submit($form, &$form_state) {
+  foreach (array_keys($form_state['plugin']['defaults']) as $key) {
+    if (isset($form_state['values'][$key])) {
+      $form_state['conf'][$key] = $form_state['values'][$key];
+    }
+  }
+}
+
 /**
  * Build blocks for Related events
  */
 function csc_role_render($subtype, $conf, $panel_args, $context = NULL) {
-
-  $qry = "SELECT n.nid FROM {node} n, {field_data_field_csc_director} fsd WHERE n.status=1 AND n.type = 'people' AND n.nid = fsd.entity_id AND fsd.field_csc_director_value=1";
+	$role = $conf['role'];
+  $qry = "SELECT n.nid FROM {node} n, {field_data_field_csc_role} fsd WHERE n.status=1 AND n.type = 'people' AND n.nid = fsd.entity_id AND fsd.field_csc_role_value=$role";
   $r = db_query($qry);
 
   $output = '';

@@ -67,9 +67,9 @@ function csc_role_edit_form_submit($form, &$form_state) {
  */
 function csc_role_render($subtype, $conf, $panel_args, $context = NULL) {
 	$role = $conf['role'];
-  $qry = "SELECT n.nid FROM {node} n, {field_data_field_csc_role} fsd WHERE n.status=1 AND n.type = 'people' AND n.nid = fsd.entity_id AND fsd.field_csc_role_value=$role";
-  $r = db_query($qry);
-
+	$qry = "SELECT n.nid FROM {node} n, {field_data_field_csc_role} fsd WHERE n.status=1 AND n.type = 'people' AND n.nid = fsd.entity_id AND fsd.field_csc_role_value=:role";
+  $r = db_query($qry, array(':role' => $role));
+	
   $output = '';
   foreach($r as $row){
     $node = node_load($row->nid);

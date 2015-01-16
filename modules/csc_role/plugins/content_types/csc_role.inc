@@ -34,14 +34,6 @@ function csc_role_info($subtype, $conf, $contexts) {
 function csc_role_edit_form($form, &$form_state) {
 
   $conf = $form_state['conf'];
-
-  /*$form['description'] = array(
-    '#title' => t('Description'),
-    '#description' => t('Description (administrative)'),
-    '#type' => 'textfield',
-    '#required' => FALSE,
-    '#default_value' => $conf['description'],
-  );*/
 	
 	$form['role'] = array(
        '#type' => 'select',

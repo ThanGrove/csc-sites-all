@@ -3668,7 +3668,7 @@ body.page-node-21 .csc-people-detail:hover {
 }
 /* line 2662, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-directors img, .pane-csc-role img {
-  width: 69px;
+  width: 80px;
   float: left;
   margin-right: 7px;
 }
@@ -3695,8 +3695,8 @@ body.page-node-21 .csc-people-detail:hover {
   width: 50%;
   background-color: white;
   border-bottom: 1px #e0e0e0 solid;
-  max-height: 69px;
-  height: 69px;
+  max-height: 80px;
+  height: 80px;
   overflow: hidden;
   cursor: pointer;
 }

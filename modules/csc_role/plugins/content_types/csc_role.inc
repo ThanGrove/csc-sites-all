@@ -18,13 +18,24 @@ $plugin = array(
  */
 function csc_role_info($subtype, $conf, $contexts) {
   if (!empty($conf)) {
+  	//dpm($conf, 'conf');
+		$role_name = (!empty($conf['role'])) ? csc_role_get_roles($conf['role']) : 'Personnel';
+		if(!empty($conf['role']) & $conf['role'] == 1) { $role_name .= 's';}
     $block = new stdClass;
-    $block->title = 'The CSC Personnel';
-    $block->content = 'CSC Role Widget';
+    $block->title = 'CSC ' . $role_name;
+    $block->content = 'Show CSC ' . $role_name;
     return $block;
   }
 }
 
+function csc_role_get_roles($index = FALSE) {
+	$roles = array(
+		0 => t('None'),
+		1 => t('Director'),
+		2 => t('Staff'),
+	);
+	if($index) { return $roles[$index]; } else { return $roles; }
+}
 
 
 /**
@@ -38,11 +49,7 @@ function csc_role_edit_form($form, &$form_state) {
 	$form['role'] = array(
        '#type' => 'select',
        '#title' => t('Role'),
-       '#options' => array(
-          0 => t('None'),
-         	1 => t('Director'),
-         	2 => t('Staff'),
-       ),
+       '#options' => csc_role_get_roles(),
        '#default_value' => (empty($conf['role'])) ? 0 : $conf['role'],
        '#description' => t('Choose the CSC role you want to list in this pane'),
   );

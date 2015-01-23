@@ -32,17 +32,19 @@ function csc_event_date_render($subtype, $conf, $panel_args, $context = NULL) {
     $lng = $node->language;
 
     if(!empty($node->field_event_date)) {
-    	$tba = (!empty($node->field_tba)) ? $node->field_tba['und'][0]['value'] : 0;
-    	$format_type = ($tba == 1)?'panopoly_day':'full';
-			$tbastr = ($tba == 1)? ', Time TBA': '';
-			$display = array('settings' => array('format_type' => $format_type));
-			$dout = field_view_field('node', $node, 'field_event_date', $display);
-      
+    	$tba = (empty($node->field_tba) || $node->field_tba['und'][0]['value'] == 0) ?  FALSE : TRUE;
+			
+			$dout = field_view_field('node', $node, 'field_event_date');
+			if($tba) {
+				$display = array('settings' => array('format_type' => 'panopoly_day'));
+				$dout = field_view_field('node', $node, 'field_event_date', $display);
+			}
 
       $output = '<div id="csc-event-date">';
       foreach($dout['#items'] as $n => $item) {
-      	$output .= $dout[$n]['#markup'] . $tbastr;
+      	$output .= $dout[$n]['#markup'];
       }
+			if($tba) { $output .= ', Time TBA'; }
       $output.= "</div>\n";
 
       $block = new stdClass();

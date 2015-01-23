@@ -39,6 +39,8 @@ function csc_next_event_render($subtype, $conf, $panel_args, $context = NULL) {
     list($year, $month, $day) = explode('-', $d);
     list($h, $min, $sec) = explode(':', $t);
     $tstamp = mktime($h, $min, $sec, $month, $day, $year);
+		$datefield = field_view_field('node', $node, 'field_event_date');
+		$tstamp = $datefield[0]['#markup'];
     if($node->field_featured_image){
       $img = theme_image_style(array('style_name' => 'medium','path' => $node->field_featured_image[$lng][0]['uri'],'alt' => $node->title, 'title' => '', 'width' => '', 'height' => ''));
       $class = ' half';
@@ -48,7 +50,6 @@ function csc_next_event_render($subtype, $conf, $panel_args, $context = NULL) {
     }
 
     $location_name = isset($node->field_location[$lng][0]['name']) ? $node->field_location[$lng][0]['name'] : '';
-		$tstamp = ($tstamp == '') ? 'TBA' : format_date($tstamp, 'small');
 		
     $output = '<div class="csc-item-container">';
     $output.= '<div class="csc-event-text-container'.$class.'">';

@@ -47,8 +47,11 @@ function csc_event_date_render($subtype, $conf, $panel_args, $context = NULL) {
 				$item = $dout['#items'][0];
 				$v1 = (isset($item['value'])) ? $item['value'] : '';
 				$v2 = (isset($item['value2'])) ? $item['value2'] : '';
-				$output .= '<p>' . csc_event_date_repeat_rule_render($item['rrule'], $v1,  $v2) . '</p>';
-				
+				if($rrstr = csc_event_date_repeat_rule_render($item['rrule'], $v1,  $v2)) {
+					$output .= '<p>' . $rrstr . '</p>';
+				} else {
+					$output .= $dout[0]['#markup']; // if rule can't be rendered use default markup
+				}
 			} else {
 			// Otherwise use pre-rendered markup for each item (should only be one)
 	      foreach($dout['#items'] as $n => $item) {
@@ -77,7 +80,7 @@ function csc_event_date_repeat_rule_render($rule, $t1='', $t2='') {
     $value = $parts[1];
     $rrule[$key] = $value;
   }
-	$outstr = "";
+	$outstr = FALSE;
 	// Weekly by day
 	if($rrule['FREQ'] == 'WEEKLY' && isset($rrule['BYDAY'])) {
 		$days = date_repeat_dow_day_options();
@@ -107,8 +110,10 @@ function csc_event_date_repeat_rule_render($rule, $t1='', $t2='') {
 										'@enddate' => $enddate,
 								));
 		}
-	}
-	// Add Other Rules here as needed for repeat rule render
+		
+	} else {
+		// Add Other Rules here as needed for repeat rule render
+	} 
 	return $outstr;
 }
 

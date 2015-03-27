@@ -58,7 +58,7 @@ function csc_next_event_render($subtype, $conf, $panel_args, $context = NULL) {
     $output.= '<span class="when">WHEN:</span> ' . $tstamp  . "<br>";
     $output.= '<span class="when">WHERE: </span>' . $location_name . "<br>";
     $output.= '<div class="event-desc">' . $node->field_teaser[$lng][0]['value'] . "</div>";
-    $output.= '<p>' . l('CONTINUE READING', "node/" . $node->nid, array('attributes' => array('class' => 'white-link')))  . '</p>';
+    $output.= '<p>' . l('CONTINUE READING', "node/" . $node->nid, array('attributes' => array('class' => array('white-link'))))  . '</p>';
     $output.= '</div>';
 
     if($img){

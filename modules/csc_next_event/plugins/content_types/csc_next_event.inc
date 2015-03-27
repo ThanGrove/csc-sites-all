@@ -34,8 +34,9 @@ function csc_next_event_render($subtype, $conf, $panel_args, $context = NULL) {
   if($data){
     $node = node_load($data->entity_id);
     $lng = $node->language;
-
-    list($d,$t) = explode(' ', $node->field_event_date[$lng][0]['value']);
+		$dateval = $node->field_event_date[$lng][0]['value'];
+    list($d,$t) = explode(' ', $dateval);
+		if(strpos($dateval, 'T') > -1) { list($d,$t) = explode('T', $dateval); }
     list($year, $month, $day) = explode('-', $d);
     list($h, $min, $sec) = explode(':', $t);
     $tstamp = mktime($h, $min, $sec, $month, $day, $year);

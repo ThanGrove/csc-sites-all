@@ -20,7 +20,7 @@ function csc_role_info($subtype, $conf, $contexts) {
   if (!empty($conf)) {
   	//dpm($conf, 'conf');
 		$role_name = (!empty($conf['role'])) ? csc_role_get_roles($conf['role']) : 'Personnel';
-		if(!empty($conf['role']) & $conf['role'] == 1) { $role_name .= 's';}
+		if(!empty($conf['role']) & ($conf['role'] == 1 || $conf['role'] == 3)) { $role_name .= 's';}
     $block = new stdClass;
     $block->title = 'CSC ' . $role_name;
     $block->content = 'Show CSC ' . $role_name;
@@ -31,6 +31,7 @@ function csc_role_info($subtype, $conf, $contexts) {
 function csc_role_get_roles($index = FALSE) {
 	$roles = array(
 		0 => t('None'),
+		3 => t('Executive'),
 		1 => t('Director'),
 		2 => t('Staff'),
 	);

@@ -200,8 +200,17 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
         $order = 'ASC';
         $render_function = isset($_GET['group']) ? 'csc_lists_default_render' : 'csc_lists_alpha_render';
         break;
-      case 'offered':
+      case 'offered': // "Date Offered" is default
       default:
+        $fields = ', min(df.field_date_value) as dfv';
+				$tables .= ', field_data_field_date {df}';
+				$where .= 'AND n.nid=df.entity_id';
+				$group = 'GROUP BY n.nid';
+        $sort_by = 'dfv';
+        $order = 'DESC';
+				$render_function = 'csc_lists_semester_render';
+				break;
+      /* old default
         $fields = ', UNIX_TIMESTAMP(fd.field_date_value) as start_date, UNIX_TIMESTAMP(fd.field_date_value2) as end_date';
         if($filter <> 'ongoing' and $filter <> 'past' and $filter <> 'upcoming'){
           $tables .= ', {field_data_field_date} fd';
@@ -213,6 +222,7 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
         $order = 'ASC';
         $render_function = isset($_GET['group']) ? 'csc_lists_default_render' : 'csc_lists_offered_render';
         break;
+			 * */
     }
   }
 
@@ -284,7 +294,6 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
   }
 
   $qry = "SELECT n.nid $fields FROM {node} n $join $tables WHERE n.status = '1' AND n.type = '$node_type' $where $group ORDER BY $sort_by $order";
-	//dpm($qry, 'query');
   //$output = csc_lists_select();
   $output = '<div class="list-items ' . $render_function . '">' . $render_function($qry) . '</div>';
   $output .= '<script>jQuery(".list-item").dotdotdot({watch: true, height: 150})</script>';
@@ -313,7 +322,8 @@ function csc_lists_select($sortArg) {
       $filter = array();
       break;
     case 'class':
-      $sort = array('Date Offered' => array('offered' => 'Upcoming'), 'Title' => array('title_asc' => 'A-Z', 'title_desc' => 'Z-A'), 'Date Added' => array('date_desc' => 'Newest First', 'date_asc' => 'Oldest First'), 'School' => array('school' => 'School A-Z'));
+			// Removed from sort: 'Date Added' => array('date_desc' => 'Newest First', 'date_asc' => 'Oldest First'),
+      $sort = array('Date Offered' => array('offered' => 'Date Offered'), 'Title' => array('title_asc' => 'A-Z', 'title_desc' => 'Z-A'), 'School' => array('school' => 'School A-Z'));
       $sort_default = 'date_desc';
       //$filter = array('upcoming' => 'Upcoming', 'ongoing' => 'Ongoing', 'past' => 'Past');
       break;
@@ -414,7 +424,7 @@ function csc_lists_select($sortArg) {
 
 function csc_lists_default_render($qry){
   $r = db_query($qry);
-
+	
   $output = '';
   foreach($r as $row){
     $node = node_load($row->nid);
@@ -482,18 +492,57 @@ function csc_lists_year_render($qry){
     if($year <> $y){
       $year = $y;
       $output .= "<div class='clear'></div><h2 class='lower'>$year</h2>\n";
-      $output .= "<div class='list-group'>$item</div>";
+      $output .= "<div class='list-group'>$item";
     }else{
       $output .= $item;
     }
   }
-
+  $output .= '</div>';
   return $output;
+}
+
+/**
+ * Organize classes by semester (Fall 2015, etc.). This is default view.
+ */
+function csc_lists_semester_render($qry){
+  $r = db_query($qry);
+  $output = ''; $semester = '';
+  foreach($r as $row){
+    $node = node_load($row->nid);
+    $lng = $node->language;
+    $item = theme('csc_lists_item', array('title' => $node->title,
+                                          'nid' => $node->nid,
+                                          'teaser' => isset($node->field_small_teaser[$lng][0]['value']) ? $node->field_small_teaser[$lng][0]['value'] : '',
+                                          'image' => isset($node->field_featured_image[$lng][0]['uri'])? $node->field_featured_image[$lng][0]['uri'] : '',
+                                         ));
+
+    $mysemester = csc_list_calculate_semester($row->dfv);
+    if($mysemester <> $semester){
+      $semester = $mysemester;
+      $output .= "<div class='clear'></div><h2 class='lower'>$semester</h2>\n";
+      $output .= "<div class='list-group'>$item";
+    }else{
+      $output .= $item;
+    }
+  }
+  $output .= '</div>';
+  return $output;
+}
+
+function csc_list_calculate_semester($start) {
+	$dt = date_parse($start);
+	$year = $dt['year'];
+	$month = $dt['month'];
+	
+	//dpm($month, $year);
+	$term = t('Spring');
+	if ($month > 5 && $month < 8) { $term = t('Summer'); }
+	if ($month > 7) { $term = t('Fall'); }
+	return "$term $year"; 	
 }
 
 function csc_lists_school_render($qry){
   $r = db_query($qry);
-
   $output = ''; $school = '';
   foreach($r as $row){
     $node = node_load($row->nid);
@@ -508,12 +557,12 @@ function csc_lists_school_render($qry){
     if($school <> $s){
       $school = $s;
       $output .= "<div class='clear'></div><h2 class='lower'>$school</h2>\n";
-      $output .= "<div class='list-group'>$item</div>";
+      $output .= "<div class='list-group'>$item";
     }else{
       $output .= $item;
     }
   }
-
+  $output .= '</div>';
   return $output;
 }
 

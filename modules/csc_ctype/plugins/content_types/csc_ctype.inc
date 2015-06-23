@@ -65,7 +65,7 @@ function csc_ctype_render($subtype, $conf, $panel_args, $context = NULL) {
   }
   
   if($type){
-    $output = '<span class="csc-node-content-type">' . $type . '</output>';
+    $output = '<span class="csc-node-content-type">' . $type . '</span>';
     
     $block = new stdClass();
     $block->title = '';

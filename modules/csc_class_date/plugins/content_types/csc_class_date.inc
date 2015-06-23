@@ -85,23 +85,31 @@ function csc_class_date_repeat_rule_render($rule, $t1='', $t2='') {
 		} else if (isset($rrule['COUNT'])) {
 			$enddate = date('M jS, Y', strtotime($t1 . " + {$rrule['COUNT']} weeks")) . " ({$rrule['COUNT']} weeks)";
 		}
+		$dayst = $days[$rrule['BYDAY']];
+		if( strpos($rrule['BYDAY'], ",") > -1) {
+			$dpts = explode(',', $rrule['BYDAY']);
+			foreach($dpts as $d1) {
+				$dayst .= $days[$d1] . ', ';
+			}
+			$dayst = substr($dayst, 0, strlen($dayst) - 2);
+		}
 		if(empty($t1)) {
 			$outstr = t('Every @int@day until @enddate', array(
 										'@int' => $prefix, 
-										'@day' => $days[$rrule['BYDAY']], 
+										'@day' => $dayst, 
 										'@enddate' => $enddate,
 								));
 		} elseif (empty($t2)) {
 			$outstr = t('Every @int@day from @starttime until @enddate', array(
 										'@int' => $prefix, 
-										'@day' => $days[$rrule['BYDAY']], 
+										'@day' => $dayst, 
 										'@starttime' => csc_class_date_parse_time($t1),
 										'@enddate' => $enddate,
 								));
 		} else {
 			$outstr = t("@startdate - @enddate<br/>Every @int@day from @starttime to @endtime", array(
 										'@int' => $prefix, 
-										'@day' => $days[$rrule['BYDAY']], 
+										'@day' => $dayst, 
 										'@starttime' => csc_class_date_parse_time($t1),
 										'@startdate' => csc_class_date_parse_time($t1, 'date'),
 										'@endtime' => csc_class_date_parse_time($t2),

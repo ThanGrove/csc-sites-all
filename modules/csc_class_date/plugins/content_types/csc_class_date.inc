@@ -81,9 +81,12 @@ function csc_class_date_repeat_rule_render($rule, $t1='', $t2='') {
 		if($rrule['INTERVAL'] == 2) { $prefix = t('other') . ' '; }
 		if($rrule['INTERVAL'] == 3) { $prefix = t('third') . ' '; }
 		if (isset($rrule['UNTIL'])) {
-			$enddate = date('M jS, Y', strtotime($rrule['UNTIL']));
+			$enddate = date('D. M jS, Y', strtotime($rrule['UNTIL']));
+			$weeks = ceil((strtotime($rrule['UNTIL'], 0) - strtotime($t1, 0)) / 604800);
+			$pl = ($weeks > 1) ? 's' : '';
+			$enddate .= " ($weeks week{$pl})";
 		} else if (isset($rrule['COUNT'])) {
-			$enddate = date('M jS, Y', strtotime($t1 . " + {$rrule['COUNT']} weeks")) . " ({$rrule['COUNT']} weeks)";
+			$enddate = date('D. M jS, Y', strtotime($t1 . " + {$rrule['COUNT']} weeks")) . " ({$rrule['COUNT']} weeks)";
 		}
 		$dayst = $days[$rrule['BYDAY']];
 		if( strpos($rrule['BYDAY'], ",") > -1) {
@@ -119,9 +122,12 @@ function csc_class_date_repeat_rule_render($rule, $t1='', $t2='') {
 		
 	} else if ($rrule['FREQ'] == 'DAILY') { // Daily frequency
 		if (isset($rrule['UNTIL'])) {
-			$enddate = date('M jS, Y', strtotime($rrule['UNTIL']));
+			$enddate = date('D. M jS, Y', strtotime($rrule['UNTIL']));
+			$weeks = ceil((strtotime($rrule['UNTIL'], 0) - strtotime($t1, 0)) / 604800);
+			$pl = ($weeks > 1) ? 's' : '';
+			$enddate .= " ($weeks week{$pl})";
 		} else if (isset($rrule['COUNT'])) {
-			$enddate = date('M jS, Y', strtotime($t1 . " + {$rrule['COUNT']} weeks")) . " ({$rrule['COUNT']} weeks)";
+			$enddate = date('D. M jS, Y', strtotime($t1 . " + {$rrule['COUNT']} weeks")) . " ({$rrule['COUNT']} weeks)";
 		}
 		$outstr = t("@startdate - @enddate<br/>Monday through Friday, @starttime to @endtime", array(
 										'@starttime' => csc_class_date_parse_time($t1),
@@ -156,7 +162,7 @@ function csc_class_date_parse_time($d, $type='time') {
 		}
 		return $fd;
 	} else {
-		$fd = format_date(strtotime($d), 'custom', 'M j, Y');
+		$fd = format_date(strtotime($d), 'custom', 'D. M j, Y');
 		return $fd;
 	}
 }

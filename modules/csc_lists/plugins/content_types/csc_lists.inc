@@ -533,10 +533,11 @@ function csc_list_calculate_semester($start) {
 	$dt = date_parse($start);
 	$year = $dt['year'];
 	$month = $dt['month'];
-	
+	$day = $dt['day'];
 	//dpm($month, $year);
 	$term = t('Spring');
-	if ($month > 5 && $month < 8) { $term = t('Summer'); }
+	if ($month == 1 && $day < 10) { $term = t('J-Term'); }
+	if ($month > 4 && $month < 8) { $term = t('Summer'); }
 	if ($month > 7) { $term = t('Fall'); }
 	return "$term $year"; 	
 }

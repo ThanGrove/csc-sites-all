@@ -117,6 +117,18 @@ function csc_class_date_repeat_rule_render($rule, $t1='', $t2='') {
 								));
 		}
 		
+	} else if ($rrule['FREQ'] == 'DAILY') { // Daily frequency
+		if (isset($rrule['UNTIL'])) {
+			$enddate = date('M jS, Y', strtotime($rrule['UNTIL']));
+		} else if (isset($rrule['COUNT'])) {
+			$enddate = date('M jS, Y', strtotime($t1 . " + {$rrule['COUNT']} weeks")) . " ({$rrule['COUNT']} weeks)";
+		}
+		$outstr = t("@startdate - @enddate<br/>Monday through Friday, @starttime to @endtime", array(
+										'@starttime' => csc_class_date_parse_time($t1),
+										'@startdate' => csc_class_date_parse_time($t1, 'date'),
+										'@endtime' => csc_class_date_parse_time($t2),
+										'@enddate' => $enddate,
+								));
 	} else {
 		// Add Other Rules here as needed for repeat rule render
 	} 
@@ -139,7 +151,7 @@ function csc_class_date_parse_time($d, $type='time') {
 		$is_dlst = ($timestamp >= $dls_start && $timestamp <= $dls_end)  ? TRUE : FALSE;
 		if ($is_dlst) {
 			$pts = explode(':', $fd);
-			$pts[0] = $pts[0] + 1;
+			$pts[0] = ($pts[0] + 1) % 12;
 			$fd = implode(':', $pts);
 		}
 		return $fd;

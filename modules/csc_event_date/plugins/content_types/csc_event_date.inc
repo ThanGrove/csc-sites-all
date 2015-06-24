@@ -125,6 +125,16 @@ function csc_event_date_parse_time($d) {
 	date_default_timezone_set($gmt);
 	$fd = format_date(strtotime($d), 'custom', 'g:i A', $est);
 	date_default_timezone_set($est);
+	// Account for daylight savings time
+	$timestamp = strtotime($d);
+ 	$dls_start = strtotime("Second Sunday March ". date('Y', $timestamp));
+  $dls_end = strtotime("First Sunday November ". date('Y', $timestamp));
+	$is_dlst = ($timestamp >= $dls_start && $timestamp <= $dls_end)  ? TRUE : FALSE;
+	if ($is_dlst) {
+		$pts = explode(':', $fd);
+		$pts[0] = ($pts[0] + 1) % 12;
+		$fd = implode(':', $pts);
+	}
 	return $fd;
 }
 

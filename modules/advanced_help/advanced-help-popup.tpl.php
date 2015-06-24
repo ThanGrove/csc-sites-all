@@ -15,7 +15,7 @@
   <?php print $scripts; ?>
   <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
-<body class="advanced-help-popup-body">
+<body>
   <div id="page">
     <div id="header">
       <?php if (!empty($search_box)): ?>
@@ -34,10 +34,7 @@
       </div> <!-- /content-content -->
     </div> <!-- /content -->
 
-    <!--
-    See comment about $closure in main module.
-    print $closure;
-    -->
+    <?php print $closure; ?>
 
   </div> <!-- /page -->
 </body>

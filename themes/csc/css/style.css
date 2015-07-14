@@ -1769,6 +1769,11 @@ fieldset {
   margin-top: 0;
 }
 
+/* Adds margin around node edit form */
+.node-form > div {
+	margin: 4px 16px;
+}
+
 /* line 1269, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .filter-wrapper {
   top: 0;

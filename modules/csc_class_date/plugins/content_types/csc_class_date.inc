@@ -34,6 +34,12 @@ function csc_class_date_render($subtype, $conf, $panel_args, $context = NULL) {
     if(!empty($node->field_date)) {
     	
 			$dout = field_view_field('node', $node, 'field_date');
+    	$tba = (empty($node->field_tba) || $node->field_tba['und'][0]['value'] == 0) ?  FALSE : TRUE;
+    	$online = (empty($node->field_online_course) || $node->field_online_course['und'][0]['value'] == 0) ?  FALSE : TRUE;
+			if($tba || $online) {
+				$display = array('settings' => array('format_type' => 'panopoly_day'));
+				$dout = field_view_field('node', $node, 'field_date', $display);
+			}
       $output = '<div id="csc-class-date">';
 			
 			// If there's a repeat rule, custom format the string for presentation in block
@@ -51,6 +57,8 @@ function csc_class_date_render($subtype, $conf, $panel_args, $context = NULL) {
 	      foreach($dout['#items'] as $n => $item) {
 	      	$output .= $dout[$n]['#markup'];
 	      }
+				if ($online) { $output = str_replace('class="date-display-single">', 'class="date-display-single">Beginning ', $output); }
+				else if($tba) { $output .= ', Time TBA'; }
 			}
 			
       $output.= "</div>\n";

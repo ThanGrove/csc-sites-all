@@ -40,6 +40,7 @@ function csc_isotope_render($subtype, $conf, $panel_args, $context = NULL) {
     LEFT JOIN file_managed fm ON fdfi.field_featured_image_fid=fm.fid
     LEFT JOIN field_data_field_small_teaser fst ON fst.entity_id=n.nid
     WHERE n.status=1 AND n.type = 'initiatives'
+		AND TIMESTAMPDIFF(MONTH,FROM_UNIXTIME(n.created),CURDATE()) < 18
     ORDER BY n.created DESC";
   $r = db_query($qry);
   $act = array();
@@ -59,6 +60,7 @@ function csc_isotope_render($subtype, $conf, $panel_args, $context = NULL) {
     LEFT JOIN field_data_field_alternate_url fau ON n.nid=fau.entity_id
     WHERE n.status=1
     AND n.type IN ('feature', 'news')
+		AND TIMESTAMPDIFF(MONTH,FROM_UNIXTIME(n.created),CURDATE()) < 18
     ORDER BY n.created DESC";
     
   $r = db_query($qry);

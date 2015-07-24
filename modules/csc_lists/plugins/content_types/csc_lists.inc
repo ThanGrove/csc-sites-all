@@ -444,14 +444,14 @@ function csc_lists_alpha_render($qry){
   $output = ''; $letter = '';
   foreach($r as $row){
     $node = node_load($row->nid);
+    $lng = $node->language;
 		
-		// Use thumbnail image if available, otherwise use main.
+		// Use Thumbnail if available otherwise main image
 		$img = isset($node->field_thumbnail[$lng][0]['uri'])? $node->field_thumbnail[$lng][0]['uri'] : FALSE;
 		if (!$img) {
 			$img = isset($node->field_featured_image[$lng][0]['uri'])? $node->field_featured_image[$lng][0]['uri'] : '';
 		}
 		
-    $lng = $node->language;
     $item = theme('csc_lists_item', array('title' => $node->title,
                                           'nid' => $node->nid,
                                           'teaser' => isset($node->field_small_teaser[$lng][0]['value']) ? $node->field_small_teaser[$lng][0]['value'] : '',

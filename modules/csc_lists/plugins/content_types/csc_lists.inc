@@ -441,15 +441,21 @@ function csc_lists_default_render($qry){
 
 function csc_lists_alpha_render($qry){
   $r = db_query($qry);
-
   $output = ''; $letter = '';
   foreach($r as $row){
     $node = node_load($row->nid);
+		
+		// Use thumbnail image if available, otherwise use main.
+		$img = isset($node->field_thumbnail[$lng][0]['uri'])? $node->field_thumbnail[$lng][0]['uri'] : FALSE;
+		if (!$img) {
+			$img = isset($node->field_featured_image[$lng][0]['uri'])? $node->field_featured_image[$lng][0]['uri'] : '';
+		}
+		
     $lng = $node->language;
     $item = theme('csc_lists_item', array('title' => $node->title,
                                           'nid' => $node->nid,
                                           'teaser' => isset($node->field_small_teaser[$lng][0]['value']) ? $node->field_small_teaser[$lng][0]['value'] : '',
-                                          'image' => isset($node->field_featured_image[$lng][0]['uri'])? $node->field_featured_image[$lng][0]['uri'] : '',
+                                          'image' => $img,
                                          ));
 
     $l = ($node->type == 'people') ? strtoupper(substr($node->field_last_name[$lng][0]['value'], 0, 1)) : strtoupper(substr($node->title, 0, 1));

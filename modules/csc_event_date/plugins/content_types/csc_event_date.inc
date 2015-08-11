@@ -30,7 +30,9 @@ function csc_event_date_render($subtype, $conf, $panel_args, $context = NULL) {
   if ($nodeid){
     $node = node_load($nodeid);
     $lng = $node->language;
-
+		$ew = entity_metadata_wrapper('node', $node);
+		$hd = $ew->field_hide_date->value();
+		if($hd) {return;}
     if(!empty($node->field_event_date)) {
     	$tba = (empty($node->field_tba) || $node->field_tba['und'][0]['value'] == 0) ?  FALSE : TRUE;
 			
@@ -87,24 +89,41 @@ function csc_event_date_repeat_rule_render($rule, $t1='', $t2='') {
 		$prefix = '';
 		if($rrule['INTERVAL'] == 2) { $prefix = t('other') . ' '; }
 		if($rrule['INTERVAL'] == 3) { $prefix = t('third') . ' '; }
+		
+		// Account for multiple days in a week
+		$dayst = $days[$rrule['BYDAY']];
+		$daylist = array();
+		if( strpos($rrule['BYDAY'], ",") > -1) { // e.g., BYDAY => TU,TH
+			$dpts = explode(',', $rrule['BYDAY']);
+			foreach($dpts as $d1) {
+				$daylist[] = $days[$d1];
+			}
+			if (count($daylist) == 2) {
+				 $dayst = implode(' and ', $daylist);
+			} else {
+				$last = array_pop($daylist);
+				$dayst = implode(', ', $daylist) . " and $last";
+			}
+		}
+		
 		$enddate = date('M jS, Y', strtotime($rrule['UNTIL']));
 		if(empty($t1)) {
 			$outstr = t('Every @int@day until @enddate', array(
 										'@int' => $prefix, 
-										'@day' => $days[$rrule['BYDAY']], 
+										'@day' => $dayst, 
 										'@enddate' => $enddate,
 								));
 		} elseif (empty($t2)) {
 			$outstr = t('Every @int@day from @starttime until @enddate', array(
 										'@int' => $prefix, 
-										'@day' => $days[$rrule['BYDAY']], 
+										'@day' => $dayst, 
 										'@starttime' => csc_event_date_parse_time($t1),
 										'@enddate' => $enddate,
 								));
 		} else {
 			$outstr = t('Every @int@day from @starttime to @endtime until @enddate', array(
 										'@int' => $prefix, 
-										'@day' => $days[$rrule['BYDAY']], 
+										'@day' => $dayst, 
 										'@starttime' => csc_event_date_parse_time($t1),
 										'@endtime' => csc_event_date_parse_time($t2),
 										'@enddate' => $enddate,

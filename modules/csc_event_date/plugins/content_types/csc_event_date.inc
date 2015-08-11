@@ -32,8 +32,7 @@ function csc_event_date_render($subtype, $conf, $panel_args, $context = NULL) {
     $lng = $node->language;
 		$ew = entity_metadata_wrapper('node', $node);
 		$hd = $ew->field_hide_date->value();
-		if($hd) {return;}
-    if(!empty($node->field_event_date)) {
+    if(!$hd && !empty($node->field_event_date)) {
     	$tba = (empty($node->field_tba) || $node->field_tba['und'][0]['value'] == 0) ?  FALSE : TRUE;
 			
 			$dout = field_view_field('node', $node, 'field_event_date');

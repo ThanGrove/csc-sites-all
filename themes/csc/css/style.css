@@ -5180,3 +5180,12 @@ margin: -12px 0 8px 0;
 .adr .geo {
   display: none;
 }
+
+#edit-field-tba, #edit-field-hide-date {
+	float: left;
+	width: 40%;
+}
+
+#edit-field-location {
+	clear:both;
+}

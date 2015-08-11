@@ -30,8 +30,9 @@ function csc_class_date_render($subtype, $conf, $panel_args, $context = NULL) {
   if ($nodeid){
     $node = node_load($nodeid);
     $lng = $node->language;
-
-    if(!empty($node->field_date)) {
+		$ew = entity_metadata_wrapper('node', $node);
+		$hd = $ew->field_hide_date->value();
+    if(!$hd && !empty($node->field_date)) {
     	
 			$dout = field_view_field('node', $node, 'field_date');
     	$tba = (empty($node->field_tba) || $node->field_tba['und'][0]['value'] == 0) ?  FALSE : TRUE;

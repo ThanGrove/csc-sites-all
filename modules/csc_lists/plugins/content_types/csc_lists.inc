@@ -5,8 +5,9 @@ $plugin = array(
   'title' => t('CSC List Nodes'),
   'description' => t('Shows List of Different type of nodes'),
   'category' => t('CSC Plugins'),
-  'render callback' => 'csc_lists_render',
   'admin info' => 'csc_lists_info',
+	'edit form' => 'csc_lists_edit_form',
+  'render callback' => 'csc_lists_render',
 );
 
 /**
@@ -21,8 +22,29 @@ function csc_lists_info($subtype, $conf, $contexts) {
   }
 }
 
-function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
+/**
+ * 'Edit form' callback for the content type.
+ */
+function csc_lists_edit_form($form, &$form_state) {
+  // Add list description text setting to add description before list
+  $form['desctxt'] = array(
+		'#type' => 'text_format',
+		'#title' => t('Description text'),
+		'#description' => t('In the textbox above, enter any descriptive text to display before this list.'),
+		'#format' => NULL,
+		'#default_value' => (isset($form_state['conf'])) ? $form_state['conf']['desctxt'] : '',
+	);
+  return $form;
+}
 
+/**
+ * The submit form stores the data in $conf.
+ */
+function csc_lists_edit_form_submit($form, &$form_state) {
+	$form_state['conf']['desctxt'] = $form_state['values']['desctxt']['value'];
+}
+
+function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
   $type = arg(1);
   $nid = (int)arg(2);
   $types = array_keys(node_type_get_types());
@@ -299,13 +321,13 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
   $output .= '<script>jQuery(".list-item").dotdotdot({watch: true, height: 150})</script>';
 
 	$desc = '';
-	if ( $type == 'class' ) {
+	/*if ( $type == 'class' ) {
 		$desc = '<p>If you are an instructor at U.Va. that teaches a class or workshop with a contemplative component that would like to be included on the CSC website, ' . 
 						'please write to <a href="mailto:csc@virginia.edu">csc@virginia.edu</a>.</p>';
-	}
+	}*/
   $block = new stdClass();
   $block->title = $title;
-  $block->content = $desc . csc_lists_select($sort) . '<div class="csc-lists-container">' . $output . '</div><div class="clear"></div>';
+  $block->content = $conf['desctxt'] . csc_lists_select($sort) . '<div class="csc-lists-container">' . $output . '</div><div class="clear"></div>';
 
   return $block;
 }

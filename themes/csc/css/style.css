@@ -5190,3 +5190,8 @@ margin: -12px 0 8px 0;
 	clear:both;
 }
 
+/* List Nodes Configure form */
+#modalContent #csc-lists-edit-form {
+    font-size: 130%;
+}
+

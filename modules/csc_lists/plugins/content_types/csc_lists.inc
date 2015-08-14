@@ -298,9 +298,14 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
   $output = '<div class="list-items ' . $render_function . '">' . $render_function($qry) . '</div>';
   $output .= '<script>jQuery(".list-item").dotdotdot({watch: true, height: 150})</script>';
 
+	$desc = '';
+	if ( $type == 'class' ) {
+		$desc = '<p>If you are an instructor at U.Va. that teaches a class or workshop with a contemplative component that would like to be included on the CSC website, ' . 
+						'please write to <a href="mailto:csc@virginia.edu">csc@virginia.edu</a>.</p>';
+	}
   $block = new stdClass();
   $block->title = $title;
-  $block->content = csc_lists_select($sort) . '<div class="csc-lists-container">' . $output . '</div><div class="clear"></div>';
+  $block->content = $desc . csc_lists_select($sort) . '<div class="csc-lists-container">' . $output . '</div><div class="clear"></div>';
 
   return $block;
 }
@@ -424,7 +429,6 @@ function csc_lists_select($sortArg) {
 
 function csc_lists_default_render($qry){
   $r = db_query($qry);
-	
   $output = '';
   foreach($r as $row){
     $node = node_load($row->nid);

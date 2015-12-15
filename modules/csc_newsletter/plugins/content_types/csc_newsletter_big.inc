@@ -51,10 +51,12 @@ function csc_newsletter_big_render($subtype, $conf, $panel_args, $context = NULL
   $output = '
     <div id="dialog-modal" class="csc-hide" title="Confirm Subscription">
       <p>By clicking "Subscribe" you are signing up to receive our monthly newsletter.</p>
-      <p class="subheader">Also sign up for...</p>
+      <p class="subheader">Also send me info about ...</p>
       <form id="modal-form">
-        <p><input type="checkbox" value="1" name="news-1" id="news-1">Local updates (events, classes at UVa, etc.)</p>
-        <p><input type="checkbox" value="2" name="news-2" id="news-2">Online course updates</p>
+        <p><input type="checkbox" value="1" name="news-1" id="news-1">Events and Programs at or near UVA</p>
+        <p><input type="checkbox" value="2" name="news-2" id="news-2">Online Courses and Resources</p>
+        <p><input type="checkbox" value="3" name="news-3" id="news-3">Events and Programs for UVA Students</p>
+        <p><input type="checkbox" value="4" name="news-4" id="news-4">Events and Programs for UVA Faculty & Staff</p>
      </form>
     </div>
   ';
@@ -82,6 +84,8 @@ function csc_newsletter_big_render($subtype, $conf, $panel_args, $context = NULL
    <div class= "csc-hide">
      <input type="checkbox" value="1" name="group[16045][1]" id="mce-group-16045-0"><br>
      <input type="checkbox" value="2" name="group[16045][2]" id="mce-group-16045-1"><br>
+     <input type="checkbox" value="4" name="group[16045][4]" id="mce-group-16045-2"><br>
+     <input type="checkbox" value="16" name="group[16045][16]" id="mce-group-16045-4"><br>
      <input type="text" name="b_bb09e07367e52174653ec5969_bee009d669" value="">
    </div>
    <div class="clear"><input type="button" value="SIGN UP" class="mce-button form-submit"></div>';

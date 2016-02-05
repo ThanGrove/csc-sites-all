@@ -1652,6 +1652,11 @@ ul.action-links li a {
   margin: 0 auto;
 }
 
+.page-user.not-logged-in #messages {
+    top: 80px;
+    position: relative;
+}
+
 /* line 1172, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .featured #messages {
   background: #f0f0f0;
@@ -4750,6 +4755,52 @@ body.logged-in #content {
   text-transform: none;
 }
 
+/** Node type article **/
+.node-type-article .csc-3col-col-fluid.csc-3col-first {
+    width: 100%;
+}
+
+.node-type-article .panel-pane.pane-entity-field.pane-node-field-image {
+    float: left;
+    max-width: 35%;
+    padding-right: 2.4em;
+}
+
+.node-type-article .field-type-image img.panopoly-image-full {
+    margin: 0px 0px 2px 6px;
+    padding: 4px;
+    border: thin solid rgb(85, 85, 85);
+}
+
+.node-type-article .panel-pane.pane-entity-field.pane-node-field-quick-links-links {
+    float: right;
+    background-color: #f9e5c0;
+    border: thin solid #888;
+}
+
+.node-type-article .panel-pane.pane-entity-field.pane-node-field-quick-links-links h2.pane-title {
+    margin: 0;
+    font-size: 1em;
+    background-color: grey;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+.node-type-article .panel-pane.pane-entity-field.pane-node-field-quick-links-links .pane-content {
+    padding: 0em 0.5em 0.5em 1.6em;
+}
+
+.node-type-article .panel-pane.pane-entity-field.pane-node-field-quick-links-links .pane-content .field-item {
+    display: list-item;
+    list-style: square;
+    font-size: 80% /* make the list item square smaller */
+}
+
+.node-type-article .panel-pane.pane-entity-field.pane-node-field-quick-links-links .pane-content .field-item a {
+    font-size: 125%; /* readjust for above to make the font normal */
+}
+
 /* search */
 /* line 3328, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-facet {
@@ -5193,5 +5244,10 @@ margin: -12px 0 8px 0;
 /* List Nodes Configure form */
 #modalContent #csc-lists-edit-form {
     font-size: 130%;
+}
+
+/** Provide margin for forms */
+ .block-system .content form {
+    margin: 1rem;
 }
 

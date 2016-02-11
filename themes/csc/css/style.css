@@ -3772,6 +3772,22 @@ body.page-node-21 .csc-people-detail:hover {
   }
 }
 
+/* For Audio Files */
+.pane-entity-field {
+    float: left;
+    width: 100%;
+    background: #2f2f2f;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 0 0 20px 0;
+    border-top: 1px solid #505050;
+    position: relative;
+}
+
+.pane-entity-field .jp-audio {
+    margin-left: 20px;
+}
+
 /* line 2724, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-important-dates,
 .pane-csc-grants-buttons {
@@ -3939,7 +3955,8 @@ body.page-node-21 .csc-people-detail:hover {
 .pane-csc-next-event .pane-title,
 .pane-csc-related-people .pane-title,
 .pane-csc-related-events .pane-title,
-.pane-csc-related-organizations .pane-title {
+.pane-csc-related-organizations .pane-title,
+.pane-entity-field .pane-title {
   font-family: brandon;
   font-size: 25px !important;
   padding-left: 20px;

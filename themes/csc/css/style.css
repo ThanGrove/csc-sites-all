@@ -3773,7 +3773,7 @@ body.page-node-21 .csc-people-detail:hover {
 }
 
 /* For Audio Files */
-.pane-entity-field {
+.pane-entity-field.pane-node-field-audio-files {
     float: left;
     width: 100%;
     background: #2f2f2f;
@@ -3784,7 +3784,7 @@ body.page-node-21 .csc-people-detail:hover {
     position: relative;
 }
 
-.pane-entity-field .jp-audio {
+.pane-entity-field.pane-node-field-audio-files .jp-audio {
     margin-left: 20px;
 }
 

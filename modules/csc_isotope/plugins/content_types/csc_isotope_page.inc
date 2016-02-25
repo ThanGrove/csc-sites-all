@@ -33,7 +33,7 @@ function csc_isotope_render($subtype, $conf, $panel_args, $context = NULL) {
 
   $block->title = 'Isotope Page';
 
-  //Get Activity nodes
+  //Get Activity nodes (the generic color tiles)
   $qry = "SELECT n.nid, n.type, n.title, fst.field_small_teaser_value as body, n.created, fm.uri
     FROM node n
     LEFT JOIN field_data_field_featured_image fdfi ON fdfi.entity_id=n.nid
@@ -48,29 +48,38 @@ function csc_isotope_render($subtype, $conf, $panel_args, $context = NULL) {
     $body = substr($body, 0, 150);
     $act[] = csc_isotope_item(array('title' => $row->title, 'body' => $body, 'nid' => $row->nid, 'image' => $row->uri, 'type' => $row->type, 'created' => $row->created));
   }
-
-  //Get Feature and news
+  //Get Feature and news (specific items)
   $qry = "    
-    SELECT n.nid, n.type, n.title, fst.field_small_teaser_value as body, n.created, fm.uri, fau.field_alternate_url_target_id as target
+    SELECT n.nid, n.type, n.title, fst.field_small_teaser_value as body, CONCAT_WS('', fded.field_event_date_value, fdfd.field_date_value) AS realdate, FROM_UNIXTIME(n.created) AS created, fm.uri, fau.field_alternate_url_target_id as target
     FROM node n
     LEFT JOIN field_data_field_small_teaser fst on fst.entity_id=n.nid
     LEFT JOIN field_data_field_featured_image fdfi ON fdfi.entity_id=n.nid
     LEFT JOIN file_managed fm ON fdfi.field_featured_image_fid=fm.fid
     LEFT JOIN field_data_field_alternate_url fau ON n.nid=fau.entity_id
+    LEFT JOIN field_data_field_event_date fded ON fded.entity_id=fau.field_alternate_url_target_id
+    LEFT JOIN field_data_field_date fdfd ON fdfd.entity_id=fau.field_alternate_url_target_id
     WHERE n.status=1
     AND n.type IN ('feature', 'news')
 		AND TIMESTAMPDIFF(MONTH,FROM_UNIXTIME(n.created),CURDATE()) < 18
-    ORDER BY n.created DESC";
+    ORDER BY realdate DESC";
     
   $r = db_query($qry);
 
-  $tiles = array();
+  $tileitems = array();
   foreach($r as $row){
     $body = strip_tags($row->body, '<br>');
     $body = substr($body, 0, 150);
-    $tiles[] = csc_isotope_item(array('title' => $row->title, 'body' => $body, 'nid' => $row->nid, 'target' => $row->target, 'image' => $row->uri, 'type' => $row->type, 'created' => $row->created));
+    $realdate = (empty($row->realdate)) ? strtotime($row->created) : strtotime($row->realdate);
+    $tileitems[] = array('title' => $row->title, 'body' => $body, 'nid' => $row->nid, 'target' => $row->target, 'image' => $row->uri, 'type' => $row->type, 'created' => $realdate);
   }
-
+  usort($tileitems, function($a, $b) {
+      if ($a["created"] == $b["created"]) { return 0; }
+      return ($a["created"] > $b["created"]) ? -1 : 1;
+  });
+  $tiles = array();
+  foreach ($tileitems as $tile) {
+      $tiles[] = csc_isotope_item($tile);
+  }
   //Build widget content
   $nact = sizeof($act);
   $ntiles = sizeof($tiles);

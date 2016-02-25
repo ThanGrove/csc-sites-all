@@ -76,10 +76,12 @@ function csc_isotope_render($subtype, $conf, $panel_args, $context = NULL) {
       if ($a["created"] == $b["created"]) { return 0; }
       return ($a["created"] > $b["created"]) ? -1 : 1;
   });
+  if (count($tileitems) > 15) { $tileitems = array_splice($tileitems, 0, 15); } // Trim down to maximum of 15 items on front page.
   $tiles = array();
   foreach ($tileitems as $tile) {
       $tiles[] = csc_isotope_item($tile);
   }
+  
   //Build widget content
   $nact = sizeof($act);
   $ntiles = sizeof($tiles);

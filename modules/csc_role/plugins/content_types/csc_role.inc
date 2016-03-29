@@ -10,6 +10,7 @@ $plugin = array(
   'admin info' => 'csc_role_info',
   'defaults' => array(
 		'role' => 0,
+		'desc' => '',
 	),
 );
 
@@ -68,8 +69,7 @@ function csc_role_edit_form($form, &$form_state) {
  */
  
 function csc_role_edit_form_submit($form, &$form_state) {
-  $formfields = array('role', 'desc');
-  foreach ($formfields as $key) {
+  foreach (array_keys($form_state['plugin']['defaults']) as $key) {
     if (isset($form_state['values'][$key])) {
       $form_state['conf'][$key] = $form_state['values'][$key];
     }

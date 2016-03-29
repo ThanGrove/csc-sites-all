@@ -18,7 +18,6 @@ $plugin = array(
  */
 function csc_role_info($subtype, $conf, $contexts) {
   if (!empty($conf)) {
-  	//dpm($conf, 'conf');
 		$role_name = (!empty($conf['role'])) ? csc_role_get_roles($conf['role']) : 'Personnel';
 		if(!empty($conf['role']) & ($conf['role'] == 1 || $conf['role'] == 3)) { $role_name .= 's';}
     $block = new stdClass;
@@ -45,16 +44,22 @@ function csc_role_get_roles($index = FALSE) {
 
 function csc_role_edit_form($form, &$form_state) {
 
-  $conf = $form_state['conf'];
+    $conf = $form_state['conf'];
 	
-	$form['role'] = array(
-       '#type' => 'select',
-       '#title' => t('Role'),
-       '#options' => csc_role_get_roles(),
-       '#default_value' => (empty($conf['role'])) ? 0 : $conf['role'],
-       '#description' => t('Choose the CSC role you want to list in this pane'),
-  );
-  return $form;
+    $form['role'] = array(
+        '#type' => 'select',
+        '#title' => t('Role'),
+        '#options' => csc_role_get_roles(),
+        '#default_value' => (empty($conf['role'])) ? 0 : $conf['role'],
+        '#description' => t('Choose the CSC role you want to list in this pane'),
+    );
+    $form['desc'] = array(
+        '#type' => 'textarea',
+        '#title' => t('Description'), 
+        '#default_value' => $conf['desc'], 
+        '#description' => t('Enter text you want to appear above the list of personnel'),
+    );
+    return $form;
 
 }
 
@@ -63,7 +68,8 @@ function csc_role_edit_form($form, &$form_state) {
  */
  
 function csc_role_edit_form_submit($form, &$form_state) {
-  foreach (array_keys($form_state['plugin']['defaults']) as $key) {
+  $formfields = array('role', 'desc');
+  foreach ($formfields as $key) {
     if (isset($form_state['values'][$key])) {
       $form_state['conf'][$key] = $form_state['values'][$key];
     }
@@ -92,7 +98,10 @@ function csc_role_render($subtype, $conf, $panel_args, $context = NULL) {
                                                 //'image' => isset($node->field_featured_image[$lng][1]['uri'])? $node->field_featured_image[$lng][1]['uri'] : '',
                                                 ));
   }
-
+  // If there's a description, add it before the list (output)
+  if (!empty($conf['desc'])) {
+      $output = '<p>' . $conf['desc'] . '</p>' . $output;
+  }
   $block = new stdClass();
   $block->title = 'The CSC Personnel';
   $block->content = '<div class="csc-role-container">' . $output . '</div>';

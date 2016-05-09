@@ -126,7 +126,7 @@ body {
   border: 0;
   outline: 0;
   background-color: #e8e7e5;
-  font-family: brandon, Georgia;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 /* line 59, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 body.page-node-edit {
@@ -938,7 +938,7 @@ h1#site-name {
 h1#page-title {
   font-size: 2em;
   line-height: 1.3em;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -3138,7 +3138,7 @@ body.logged-in #content {
   margin-top: 0px;
   border-top: 1px solid #c0c0c0;
   padding-top: 14px;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-weight: bold;
   font-size: 12px !important;
   text-transform: uppercase;
@@ -3192,7 +3192,7 @@ body.front .pane-csc-newsletter {
 /* line 2293, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-newsletter h2 {
   margin-top: 0px;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 12px !important;
   font-weight: bold;
   padding-top: 14px;
@@ -3383,7 +3383,7 @@ body.front .pane-csc-newsletter {
   font-size: 0.7em;
   line-height: 1.5em;
   font-weight: bold;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   color: #3c3c3c;
   background: url(../images/rounded_black_arrow_down.png) right no-repeat;
   padding-right: 20px;
@@ -3510,7 +3510,7 @@ body.front .pane-csc-newsletter {
 }
 /* line 2526, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-related-organizations .csc-organization-item h2 {
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
 /* line 2529, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -3581,7 +3581,7 @@ body.front .pane-csc-newsletter {
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -3618,7 +3618,7 @@ body.front .pane-csc-newsletter {
   float: left;
   display: none;
   color: white;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 /* line 2629, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-people-text.show {
@@ -3756,14 +3756,14 @@ body.page-node-21 .csc-people-detail:hover {
 .csc-director-text, .csc-role-text {
   padding: 3px 3px 0px 0px;
   font-size: 1em;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-style: italic;
   line-height: 16px;
   color: #999;
 }
 /* line 2710, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-director-text h2, .csc-role-text h2 {
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 1.2em;
   font-style: normal;
   text-transform: none;
@@ -3812,14 +3812,14 @@ body.page-node-21 .csc-people-detail:hover {
 .pane-csc-important-dates .content,
 .pane-csc-grants-buttons .content {
   padding: 12px 20px 10px 24px;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 1.12em;
 }
 
 /* line 2737, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-csc-important-dates h2 {
   text-shadow: #3c787e 0px 2px;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 2em;
   margin-top: 0px;
   border-bottom: 1px #6da8ae solid;
@@ -3933,7 +3933,7 @@ body.page-node-21 .csc-people-detail:hover {
 /* line 2817, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-node-title a {
   color: #000000;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 36px;
 }
 
@@ -3969,7 +3969,7 @@ body.page-node-21 .csc-people-detail:hover {
 .pane-csc-related-events .pane-title,
 .pane-csc-related-organizations .pane-title,
 .pane-entity-field .pane-title {
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 25px !important;
   padding-left: 20px;
 }
@@ -3982,7 +3982,7 @@ body.page-node-21 .csc-people-detail:hover {
 /* line 2848, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-research-title,
 .pane-csc-related-activities .pane-title, .pane-csc-related-classes .pane-title {
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 25px;
   /*padding-left: 20px;*/
 }
@@ -3990,7 +3990,7 @@ body.page-node-21 .csc-people-detail:hover {
 /* line 2853, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-research-title {
   margin-top: 0px;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 25px !important;
   padding-left: 0;
 }
@@ -4001,7 +4001,7 @@ body.page-node-21 .csc-people-detail:hover {
   /* problematic, disabled for now*/
   background: #e8e7e5;
   text-align: center;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 1em;
   padding: 5px;
   border-bottom: 1px solid #ffffff;
@@ -4062,7 +4062,7 @@ body.page-node-21 .csc-people-detail:hover {
   font-size: 21px;
   font-style: italic;
   font-weight: normal;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 
 /* line 2918, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -4089,7 +4089,7 @@ body.page-node-21 .csc-people-detail:hover {
 .white-link {
   font-size: 12px;
   font-weight: bold;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   color: #ffffff;
   background: url(../images/rounded_white_arrow.png) right no-repeat;
   padding-right: 20px;
@@ -4151,7 +4151,7 @@ body.page-node-21 .csc-people-detail:hover {
 
 /* line 2968, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-event-map h2 {
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
@@ -4263,7 +4263,7 @@ li.bjqs-next a {
   /*top: -12px;*/
   /*right: 7px;*/
   /*font-size: 2.2em;*/
-  /*font-family: brandon;*/
+  /*font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;*/
   /*padding: 5px;*/
   /*cursor: pointer;*/
   /*}*/
@@ -4299,7 +4299,7 @@ li.bjqs-next a {
 .tooltip-content h2 {
   display: none;
   font-weight: bold;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -4716,7 +4716,7 @@ body.logged-in #content {
 /* right sidebar */
 /* line 3280, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-connect-with-us {
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 1.2em;
 }
 /* line 3287, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -4740,12 +4740,12 @@ body.logged-in #content {
 /* line 3303, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .grant-body h1 {
   font-style: italic;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   color: #444;
 }
 /* line 3308, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .grant-body h2 {
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 1.8em;
 }
 /* line 3311, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -4995,7 +4995,7 @@ white-space: pre;
 /* line 3445, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-lists-container .list-item-body {
   color: #3b3b3b;
-  font-family: brandon;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 0.9em;
   margin: 0.3em 0.2em 0.2em 0.9em;
 }

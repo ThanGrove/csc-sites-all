@@ -1,13 +1,13 @@
 /* Global variables, mixins, etc. */
 /* line 96, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2, .pane-csc-directors > h2, .pane-csc-role > h2, #content .pane-events-panel-pane-1 .views-label, .pane-node-field-event-date h2.pane-title, .pane-node-field-location h2, .page-node-264 .pane-node-body h2, .page-node-215 .pane-node-body h2, .filter-tip, .pane-csc-related-research h2 a, .pane-csc-related-events h2 a, .pane-csc-related-activities h2 a, .pane-csc-related-classes h2 a, .pane-csc-important-dates h3, .pane-csc-latest-news h3 a, #content .pane-events-panel-pane-1 .node h2 a, #content .pane-events-panel-pane-1 .node span a, #content .pane-events-panel-pane-1 .views-field-title h2 a, #content .pane-events-panel-pane-1 .views-field-title span a, #content .pane-research-panel-pane-1 .node h2 a, #content .pane-research-panel-pane-1 .node span a, #content .pane-research-panel-pane-1 .views-field-title h2 a, #content .pane-research-panel-pane-1 .views-field-title span a, #content .pane-learning-panel-pane-1 .node h2 a, #content .pane-learning-panel-pane-1 .node span a, #content .pane-learning-panel-pane-1 .views-field-title h2 a, #content .pane-learning-panel-pane-1 .views-field-title span a, #content .pane-engagement-panel-pane-1 .node h2 a, #content .pane-engagement-panel-pane-1 .node span a, #content .pane-engagement-panel-pane-1 .views-field-title h2 a, #content .pane-engagement-panel-pane-1 .views-field-title span a, #content .pane-classes-panel-pane-1 .node h2 a, #content .pane-classes-panel-pane-1 .node span a, #content .pane-classes-panel-pane-1 .views-field-title h2 a, #content .pane-classes-panel-pane-1 .views-field-title span a, #content .pane-people-panel-pane-1 .node h2 a, #content .pane-people-panel-pane-1 .node span a, #content .pane-people-panel-pane-1 .views-field-title h2 a, #content .pane-people-panel-pane-1 .views-field-title span a, #content .pane-organizations-panel-pane-1 .node h2 a, #content .pane-organizations-panel-pane-1 .node span a, #content .pane-organizations-panel-pane-1 .views-field-title h2 a, #content .pane-organizations-panel-pane-1 .views-field-title span a, .view-panopoly-database-search .node h2 a, .view-panopoly-database-search .node span a, .view-panopoly-database-search .views-field-title h2 a, .view-panopoly-database-search .views-field-title span a, .csc-connect-with-us em, .csc-lists-container .list-item-title, .see-all a, .see-all-research a, .pane-csc-related-activities .see-all a, .pane-csc-related-classes .see-all a {
-  font-family: Brandon, Georgia;
+  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 
 /* line 110, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-csc-class-date h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2, .pane-csc-directors > h2, .pane-csc-role > h2, #content .pane-events-panel-pane-1 .views-label, .pane-node-field-event-date h2.pane-title, .pane-node-field-location h2, .pane-csc-event-date h2, .page-node-264 .pane-node-body h2, .page-node-215 .pane-node-body h2, .filter-tip {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
 }
 
 /* line 116, ../../../../../sass/_global.scss */
@@ -45,7 +45,7 @@
 .see-all a, .see-all-research a, .pane-csc-related-activities .see-all a, .pane-csc-related-classes .see-all a {
   position: relative;
   font-size: 11px;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   color: #3c3c3c;
   background: url(../images/rounded_black_arrow.png) right no-repeat;
   padding-right: 22px;
@@ -117,7 +117,7 @@ font-face {
 /* ---------- Overall Specifications ---------- */
 /* line 47, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 body {
-  color: #000 !important;
+  color: #555 !important;
   line-height: 1.5;
   font-size: 1em;
   word-wrap: break-word;
@@ -939,7 +939,7 @@ h1#page-title {
   font-size: 2em;
   line-height: 1.3em;
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-transform: uppercase;
 }
 
@@ -2291,7 +2291,7 @@ div.add-or-remove-shortcuts {
 }
 /* line 1626, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .admin-menu .pane-node-form-title span {
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
 }
 /* line 1631, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .admin-menu .form-item .description {
@@ -3139,7 +3139,7 @@ body.logged-in #content {
   border-top: 1px solid #c0c0c0;
   padding-top: 14px;
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   font-size: 12px !important;
   text-transform: uppercase;
 }
@@ -3194,7 +3194,7 @@ body.front .pane-csc-newsletter {
   margin-top: 0px;
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 12px !important;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   padding-top: 14px;
   text-transform: uppercase;
   text-align: center;
@@ -3382,7 +3382,7 @@ body.front .pane-csc-newsletter {
   margin-top: 20px;
   font-size: 0.7em;
   line-height: 1.5em;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   color: #3c3c3c;
   background: url(../images/rounded_black_arrow_down.png) right no-repeat;
@@ -3438,7 +3438,7 @@ body.front .pane-csc-newsletter {
   font-size: 0.9em;
   background-color: #111;
   opacity: 0.5;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   letter-spacing: 0.1em;
 }
 @media only screen and (max-width: 640px) {
@@ -3495,7 +3495,7 @@ body.front .pane-csc-newsletter {
   padding: 0;
   font-size: 12px;
   font-family: arial, verdana, serif;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
 }
 
 /* line 2516, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -3517,7 +3517,7 @@ body.front .pane-csc-newsletter {
 .pane-csc-related-organizations .csc-organization-item h2 a {
   font-size: 13px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
 }
 @media only screen and (max-width: 640px) {
   /* line 2516, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -3580,7 +3580,7 @@ body.front .pane-csc-newsletter {
 .pane-csc-related-people h2 a {
   font-size: 14px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
@@ -3627,7 +3627,7 @@ body.front .pane-csc-newsletter {
 /* line 2633, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .csc-people-text h2 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   font-size: 1em;
 }
 
@@ -3686,7 +3686,7 @@ body.page-node-21 .csc-people-detail:hover {
   text-align: center;
   padding: 10px;
   background-color: #e0e0e0;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
 }
 /* line 2662, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-directors img, .pane-csc-role img {
@@ -3873,7 +3873,7 @@ body.page-node-21 .csc-people-detail:hover {
   color: #ffffff;
   background: #ff8a54;
   padding: 8px 12px;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
@@ -4012,7 +4012,7 @@ body.page-node-21 .csc-people-detail:hover {
 .pane-csc-latest-news h2 {
   font-size: 1.2em;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   text-transform: uppercase;
 }
 /* line 2877, ../../../../../sass/sites/all/themes/csc/css/style.scss */
@@ -4069,7 +4069,7 @@ body.page-node-21 .csc-people-detail:hover {
 .when {
   font-family: arial,verdana,serif;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   margin: 0;
   padding: 0;
 }
@@ -4088,7 +4088,7 @@ body.page-node-21 .csc-people-detail:hover {
 /* line 2936, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .white-link {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   color: #ffffff;
   background: url(../images/rounded_white_arrow.png) right no-repeat;
@@ -4153,7 +4153,7 @@ body.page-node-21 .csc-people-detail:hover {
 .pane-csc-event-map h2 {
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   text-transform: uppercase;
   text-align: center;
   color: white;
@@ -4298,7 +4298,7 @@ li.bjqs-next a {
 /* line 3077, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .tooltip-content h2 {
   display: none;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
@@ -4339,7 +4339,7 @@ body .csc-panel-separator {
   padding: 50px;
   font-family: brandon, verdana, arial;
   font-size: 64px;
-  font-weight: 500;
+  font-weight: normal; /* was 500 */
   color: #ccc;
   position: relative;
   z-index: 50;
@@ -4385,7 +4385,7 @@ body.logged-in #content {
 /* line 3161, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #event-nav a {
   color: #000;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
   padding: 0.3em 0.4em;
   font-size: 0.8em;
 }
@@ -4751,7 +4751,7 @@ body.logged-in #content {
 /* line 3311, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .grant-body h2 a {
   color: #444;
-  font-weight: bold;
+  font-weight: normal; /* was bold*/
 }
 
 /* line 3320, ../../../../../sass/sites/all/themes/csc/css/style.scss */

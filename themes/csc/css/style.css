@@ -117,7 +117,7 @@ font-face {
 /* ---------- Overall Specifications ---------- */
 /* line 47, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 body {
-  color: #555 !important;
+  color: #333!important;
   line-height: 1.5;
   font-size: 1em;
   word-wrap: break-word;
@@ -126,7 +126,7 @@ body {
   border: 0;
   outline: 0;
   background-color: #e8e7e5;
-  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-family: 'brandon-light' , 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 /* line 59, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 body.page-node-edit {

@@ -73,6 +73,7 @@
 }
 
 /* line 11, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+/*
 font-face {
   font-family: brandon;
   src: url("fonts/Brandon_reg.svg"), url("fonts/Brandon_reg.woff");
@@ -101,6 +102,17 @@ font-face {
   src: url("fonts/Brandon_light.svg"), url("fonts/Brandon_light.woff");
   font-weight: 200;
 }
+*/
+@font-face
+{ font-family: brandon; src: url('/sites/all/themes/csc/css/fonts/Brandon_reg.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_reg.woff'); }
+@font-face
+{ font-family: brandon-bold; src: url('/sites/all/themes/csc/css/fonts/Brandon_bld.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_bld.woff'); font-weight: bold; }
+@font-face
+{ font-family: brandon-reg-it; src: url('/sites/all/themes/csc/css/fonts/Brandon_reg_it.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_reg_it.woff'); font-style: italic; }
+@font-face
+{ font-family: brandon-thin; src: url('/sites/all/themes/csc/css/fonts/Brandon_thin.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_thin.woff'); font-weight: 100; }
+@font-face
+{ font-family: brandon-light; src: url('/sites/all/themes/csc/css/fonts/Brandon_light.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_light.woff'); font-weight: 200; }
 
 /* ---------- Overall Specifications ---------- */
 /* line 47, ../../../../../sass/sites/all/themes/csc/css/style.scss */

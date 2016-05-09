@@ -2,7 +2,7 @@
   $(function(){
     var map = document.getElementById('map-frame');
     
-    if (typeof(map) != "undefined" && typeof(map.src) != "undefined") {
+    if (map != null && typeof(map.src) != "undefined") {
        var  src = map.src.replace('iwto=A',''),
             wto;
     

@@ -117,7 +117,7 @@ font-face {
 /* ---------- Overall Specifications ---------- */
 /* line 47, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 body {
-  color: #111!important;
+  color: #000!important;
   line-height: 1.5;
   font-size: 1em;
   word-wrap: break-word;

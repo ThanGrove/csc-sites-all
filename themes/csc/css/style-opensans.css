@@ -1,40 +1,52 @@
 
 @font-face {
-    font-family: 'open-sanslight';
-    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Light-webfont.eot');
-    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Light-webfont.woff') format('woff'),
-         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open-sanslight-italic';
-    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-LightItalic-webfont.eot');
-    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-LightItalic-webfont.woff') format('woff'),
-         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-LightItalic-webfont.ttf') format('truetype'),
-         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open-sansregular';
+    font-family: 'opensans-regular';
     src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Regular-webfont.eot');
     src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
          url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Regular-webfont.svg#opensans-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans-italic';
+    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Italic-webfont.eot');
+    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Italic-webfont.woff') format('woff'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Italic-webfont.svg#opensans-italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'opensans-bold';
+    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Bold-webfont.eot');
+    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Bold-webfont.woff') format('woff'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-Bold-webfont.svg#opensans-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans-bolditalic';
+    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-BoldItalic-webfont.eot');
+    src: url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/csc/css/fonts/opensans/OpenSans-BoldItalic-webfont.svg#opensans-bolditalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face
 { font-family: brandon; src: url('/sites/all/themes/csc/css/fonts/Brandon_reg.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_reg.woff'); }
-@font-face
+/*@font-face
 { font-family: brandon-bold; src: url('/sites/all/themes/csc/css/fonts/Brandon_bld.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_bld.woff'); font-weight: bold; }
 @font-face
 { font-family: brandon-reg-it; src: url('/sites/all/themes/csc/css/fonts/Brandon_reg_it.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_reg_it.woff'); font-style: italic; }
@@ -42,15 +54,20 @@
 { font-family: brandon-thin; src: url('/sites/all/themes/csc/css/fonts/Brandon_thin.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_thin.woff'); font-weight: 100; }
 @font-face
 { font-family: brandon-light; src: url('/sites/all/themes/csc/css/fonts/Brandon_light.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_light.woff'); font-weight: 200; }
-
+*/
 
 em {
-    font-family: 'open-sanslight-italic';
+    font-family: 'opensans-italic';
     font-style: normal;
 }
 
 strong {
-    font-family: 'open-sansregular';
+    font-family: 'opensans-bold';
+    font-weight: normal;
+}
+
+em strong, strong em {
+    font-family: 'opensans-bolditalic';
     font-weight: normal;
 }
 
@@ -130,8 +147,13 @@ strong {
 
 /* ---------- Overall Specifications ---------- */
 /* line 47, ../../../../../sass/sites/all/themes/csc/css/style.scss */
+html {
+   -webkit-font-smoothing: antialiased;
+   -webkit-tap-highlight-color: transparent;
+}
+
 body {
-  color: #000!important;
+  color: #030303!important;
   line-height: 1.5;
   font-size: 15px;
   word-wrap: break-word;
@@ -140,8 +162,10 @@ body {
   border: 0;
   outline: 0;
   background-color: #e8e7e5;
-  font-family: 'open-sanslight', helvetica, arial, sans-serif;
+  font-family: 'opensans-regular', helvetica, arial, sans-serif;
+  text-rendering: optimizeLegibility;
 }
+
 /* line 59, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 body.page-node-edit {
   /*background-color: white;*/
@@ -2696,8 +2720,8 @@ a#menu-toggle:after {
  */
 /* line 1918, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .menu-desc {
-  font-size: 1.04em;
-  font-style: italic;
+  font-family: opensans-italic;
+  font-size: 1.12em;
   color: #828282;
   padding-left: 10px;
   text-transform: none;

@@ -2726,12 +2726,15 @@ a#menu-toggle:after {
 /* line 1918, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .menu-desc {
   font-family: opensans-italic;
-  font-size: 1.12em;
+  font-size: 0.93em;
+  letter-spacing:-0.02rem;
   color: #828282;
   padding-left: 10px;
   text-transform: none;
   font-weight: normal;
 }
+
+#main-menu li.expanded > a:hover .menu-desc { color:#fff}
 
 /* line 1927, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .bryant-sidebar {

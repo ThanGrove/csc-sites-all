@@ -46,6 +46,9 @@
 
 @font-face
 { font-family: brandon; src: url('/sites/all/themes/csc/css/fonts/Brandon_reg.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_reg.woff'); }
+@font-face
+{ font-family: brandon-italic; src: url('/sites/all/themes/csc/css/fonts/Brandon_reg_it.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_reg_it.woff'); font-style: normal; }
+
 /*@font-face
 { font-family: brandon-bold; src: url('/sites/all/themes/csc/css/fonts/Brandon_bld.svg'), url('/sites/all/themes/csc/css/fonts/Brandon_bld.woff'); font-weight: bold; }
 @font-face
@@ -104,7 +107,7 @@ em strong, strong em {
 
 /* line 126, ../../../../../sass/_global.scss */
 .pane-csc-related-research h2 a, .pane-csc-related-events h2 a, .pane-csc-related-activities h2 a, .pane-csc-related-classes h2 a, .pane-csc-important-dates h3, .pane-csc-latest-news h3 a, #content .pane-events-panel-pane-1 .node h2 a, #content .pane-events-panel-pane-1 .node span a, #content .pane-events-panel-pane-1 .views-field-title h2 a, #content .pane-events-panel-pane-1 .views-field-title span a, #content .pane-research-panel-pane-1 .node h2 a, #content .pane-research-panel-pane-1 .node span a, #content .pane-research-panel-pane-1 .views-field-title h2 a, #content .pane-research-panel-pane-1 .views-field-title span a, #content .pane-learning-panel-pane-1 .node h2 a, #content .pane-learning-panel-pane-1 .node span a, #content .pane-learning-panel-pane-1 .views-field-title h2 a, #content .pane-learning-panel-pane-1 .views-field-title span a, #content .pane-engagement-panel-pane-1 .node h2 a, #content .pane-engagement-panel-pane-1 .node span a, #content .pane-engagement-panel-pane-1 .views-field-title h2 a, #content .pane-engagement-panel-pane-1 .views-field-title span a, #content .pane-classes-panel-pane-1 .node h2 a, #content .pane-classes-panel-pane-1 .node span a, #content .pane-classes-panel-pane-1 .views-field-title h2 a, #content .pane-classes-panel-pane-1 .views-field-title span a, #content .pane-people-panel-pane-1 .node h2 a, #content .pane-people-panel-pane-1 .node span a, #content .pane-people-panel-pane-1 .views-field-title h2 a, #content .pane-people-panel-pane-1 .views-field-title span a, #content .pane-organizations-panel-pane-1 .node h2 a, #content .pane-organizations-panel-pane-1 .node span a, #content .pane-organizations-panel-pane-1 .views-field-title h2 a, #content .pane-organizations-panel-pane-1 .views-field-title span a, .view-panopoly-database-search .node h2 a, .view-panopoly-database-search .node span a, .view-panopoly-database-search .views-field-title h2 a, .view-panopoly-database-search .views-field-title span a, .csc-connect-with-us em, .csc-lists-container .list-item-title {
-  font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-family: brandon-italic, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 18px;
   color: #000;
   font-style: italic;
@@ -3420,14 +3423,14 @@ body.front .pane-csc-newsletter {
 .csc-teaser-more, .csc-teaser-less {
   cursor: pointer;
   margin-top: 20px;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 1.5em;
   font-weight: normal; /* was bold*/
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   color: #3c3c3c;
   background: url(../images/rounded_black_arrow_down.png) right no-repeat;
   padding-right: 20px;
-  width: 131px;
+  width: 145px;
   text-transform: uppercase;
   line-height: 1.5em;
   /*&:hover {*/
@@ -4449,7 +4452,7 @@ body.logged-in #content {
 }
 /* line 3201, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .node h2 a, #content .pane-events-panel-pane-1 .node span a, #content .pane-events-panel-pane-1 .views-field-title h2 a, #content .pane-events-panel-pane-1 .views-field-title span a {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 /* line 3207, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 #content .pane-events-panel-pane-1 .link-wrapper {
@@ -5036,7 +5039,7 @@ white-space: pre;
 .csc-lists-container .list-item-body {
   color: #3b3b3b;
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 0.3em 0.2em 0.2em 0.9em;
 }
 @media only screen and (max-width: 640px) {

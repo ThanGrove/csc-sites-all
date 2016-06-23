@@ -61,6 +61,7 @@ function csc_isotope_render($subtype, $conf, $panel_args, $context = NULL) {
     WHERE n.status=1
     AND n.type IN ('feature', 'news')
 		AND TIMESTAMPDIFF(MONTH,FROM_UNIXTIME(n.created),CURDATE()) < 18
+		GROUP BY n.nid
     ORDER BY realdate DESC";
     
   $r = db_query($qry);

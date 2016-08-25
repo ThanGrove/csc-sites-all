@@ -86,6 +86,15 @@ em strong, strong em {
   font-weight: normal; /* was bold*/
 }
 
+/* Displaying the Where: location for classes */
+#content .pane-entity-field.pane-node-field-class-location > h2.pane-title {
+    padding-left: 0px;
+    margin-top: 0px;  
+    text-transform: uppercase;
+    font-weight: normal; /* was bold*/
+    font-size: 1.143em !important;
+}
+
 /* line 116, ../../../../../sass/_global.scss */
 #content .pane-events-panel-pane-1 h2.pane-title, #content .pane-research-panel-pane-1 h2.pane-title, #content .pane-learning-panel-pane-1 h2.pane-title, #content .pane-engagement-panel-pane-1 h2.pane-title, #content .pane-classes-panel-pane-1 h2.pane-title, #content .pane-people-panel-pane-1 h2.pane-title, #content .pane-organizations-panel-pane-1 h2.pane-title, .view-panopoly-database-search h2.pane-title, .pane-csc-lists h2 {
   font-size: 2em;

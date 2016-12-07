@@ -224,7 +224,7 @@ function csc_lists_render($subtype, $conf, $panel_args, $context = NULL) {
         break;
       case 'offered': // "Date Offered" is default
       default:
-        $fields = ', min(df.field_date_value) as dfv';
+        $fields = ', min(df.field_date_value) as dfv, max(df.field_date_value) as maxdfv';
 				$tables .= ', field_data_field_date {df}';
 				$where .= 'AND n.nid=df.entity_id';
 				$group = 'GROUP BY n.nid';
@@ -548,7 +548,7 @@ function csc_lists_semester_render($qry){
                                           'image' => isset($node->field_featured_image[$lng][0]['uri'])? $node->field_featured_image[$lng][0]['uri'] : '',
                                          ));
 
-    $mysemester = csc_list_calculate_semester($row->dfv);
+    $mysemester = csc_list_calculate_semester($row->dfv, $row->maxdfv);
     if($mysemester <> $semester){
       $semester = $mysemester;
       $output .= "<div class='clear'></div><h2 class='lower'>$semester</h2>\n";
@@ -561,13 +561,15 @@ function csc_lists_semester_render($qry){
   return $output;
 }
 
-function csc_list_calculate_semester($start) {
+function csc_list_calculate_semester($start, $end) {
 	$dt = date_parse($start);
+    $enddt = date_parse($end);
 	$year = $dt['year'];
 	$month = $dt['month'];
+    $endmonth = $enddt['month'];
 	$day = $dt['day'];
 	$term = t('Spring');
-	if ($month == 1 && $day < 16) { $term = t('J-Term'); }
+	if ($month == 1 && $day < 16) { $term = t('J-Term'); } //else if ($month < 3 && $endmonth < 3) { $term = t('Winter');}
 	if ($month > 5 && $month < 8) { $term = t('Summer'); }
 	if ($month > 7) { $term = t('Fall'); }
 	return "$term $year"; 	

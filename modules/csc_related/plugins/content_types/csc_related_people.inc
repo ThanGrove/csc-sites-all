@@ -30,9 +30,19 @@ function csc_related_people_render($subtype, $conf, $panel_args, $context = NULL
 
   $type = 'people';
   $nids = csc_related_get_nodes($type, 8);
-
+  
+  // Filter field_related nids by related people nids to get proper order for display
+  $curr_nid = csc_related_current_nid();
+  $curr_node = node_load($curr_nid);
+  $emw = entity_metadata_wrapper('node', $curr_node);
+  $frnids = $emw->field_related->value();
+  foreach($frnids as $n => $obj) {
+    $frnids[$n] = $obj->nid;
+  }
+  $nids = array_intersect($frnids, $nids); // use array_intersect to impart the proper order of nids
+  
   if(sizeof($nids)){
-    $output = '<div class="see-all"><a href="'. url('list/people/' . csc_related_current_nid()) .'">SEE ALL</a></div>';
+    $output = '<div class="see-all"><a href="'. url('list/people/' . $curr_nid) .'">SEE ALL</a></div>';
     foreach($nids as $nid){
       $node = node_load($nid);
       $lng = $node->language;

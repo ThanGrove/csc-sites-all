@@ -129,7 +129,7 @@ em strong, strong em {
 }
 
 /* line 137, ../../../../../sass/_global.scss */
-.see-all a, .see-all-research a, .pane-csc-related-activities .see-all a, .pane-csc-related-classes .see-all a {
+.see-all a, .see-all-research a, .pane-csc-related-classes .see-all a {
   position: relative;
   font-size: 11px;
   font-weight: normal; /* was bold*/
@@ -3554,7 +3554,7 @@ body.front .pane-csc-newsletter {
 }
 
 /* line 2516, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-.pane-csc-related-organizations {
+.pane-csc-related-organizations, .pane-csc-related-activities {
   float: left;
   width: 100%;
   background: #2f2f2f;
@@ -3564,24 +3564,24 @@ body.front .pane-csc-newsletter {
   border-top: 1px solid #505050;
 }
 /* line 2526, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-.pane-csc-related-organizations .csc-organization-item h2 {
+.pane-csc-related-organizations .csc-organization-item h2, .pane-csc-related-activities .csc-activities-item h2 {
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
 /* line 2529, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-.pane-csc-related-organizations .csc-organization-item h2 a {
+.pane-csc-related-organizations .csc-organization-item h2 a, .pane-csc-related-activities .csc-activities-item h2 a {
   font-size: 13px;
   color: #ffffff;
   font-weight: normal; /* was bold*/
 }
 @media only screen and (max-width: 640px) {
   /* line 2516, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-  .pane-csc-related-organizations {
+  .pane-csc-related-organizations, .pane-csc-related-activities {
     padding: 5px 20px;
     width: auto;
   }
   /* line 2538, ../../../../../sass/sites/all/themes/csc/css/style.scss */
-  .pane-csc-related-organizations h2 {
+  .pane-csc-related-organizations h2, .pane-csc-related-activities h2 {
     padding-left: 0px !important;
     margin-top: 10px;
   }
@@ -3596,7 +3596,7 @@ body.front .pane-csc-newsletter {
 }
 /* line 2551, ../../../../../sass/sites/all/themes/csc/css/style.scss */
 .pane-csc-related-activities img, .pane-csc-related-classes img {
-  width: 30%;
+  /*width: 30%;*/
   float: left;
   margin: 0.3em 0.8em 0em 0em;
 }
@@ -4023,6 +4023,7 @@ body.page-node-21 .csc-people-detail:hover {
 .pane-csc-related-people .pane-title,
 .pane-csc-related-events .pane-title,
 .pane-csc-related-organizations .pane-title,
+.pane-csc-related-activities .pane-title,
 .pane-entity-field .pane-title {
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 25px !important;
@@ -4039,7 +4040,7 @@ body.page-node-21 .csc-people-detail:hover {
 .pane-csc-related-activities .pane-title, .pane-csc-related-classes .pane-title {
   font-family: brandon, 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 25px;
-  /*padding-left: 20px;*/
+  padding-left: 20px;
 }
 
 /* line 2853, ../../../../../sass/sites/all/themes/csc/css/style.scss */

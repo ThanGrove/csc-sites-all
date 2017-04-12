@@ -31,7 +31,7 @@ function csc_related_classes_render($subtype, $conf, $panel_args, $context = NUL
   $type = 'class';
   $nids = csc_related_get_nodes($type);
 
-  if(sizeof($nids)){
+  if(is_array($nids) && sizeof($nids) > 0){
     $output = '<div class="see-all"><a href="'. url('list/class/' . csc_related_current_nid()) .'">SEE ALL</a></div>';
     foreach($nids as $nid){
       $node = node_load($nid);
